@@ -35,7 +35,15 @@ module.exports = {
 		'node/no-unpublished-import': 'off',
 		'node/no-unsupported-features/es-syntax': 'off',
 
+		'import/extensions': ['error', { vue: 'always' }],
 		'import/order': ['error', {
+			'pathGroups': [
+				{
+					pattern: '@/**',
+					group: 'internal'
+				}
+			],
+			'pathGroupsExcludedImportTypes': ['builtin'],
 			'groups': [
 				['builtin', 'external'],
 				['internal', 'parent', 'sibling', 'index']
