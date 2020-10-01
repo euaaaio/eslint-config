@@ -52,7 +52,9 @@ module.exports = {
 		}],
 		'import/newline-after-import': ['error'],
 
-		'security/detect-object-injection': 'off'
+		'security/detect-object-injection': 'off',
+
+		'vue/html-indent': ['error', 'tab']
 	},
 	overrides: [
 		{
