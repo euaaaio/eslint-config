@@ -35,7 +35,7 @@ module.exports = {
 		'node/no-unpublished-import': 'off',
 		'node/no-unsupported-features/es-syntax': 'off',
 
-		'import/extensions': ['error', { vue: 'always' }],
+		'import/extensions': ['error', 'always'],
 		'import/order': ['error', {
 			'pathGroups': [
 				{
