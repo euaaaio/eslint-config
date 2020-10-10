@@ -35,7 +35,9 @@ module.exports = {
 		'node/no-unpublished-import': 'off',
 		'node/no-unsupported-features/es-syntax': 'off',
 
-		'import/extensions': ['error', 'always'],
+		'import/extensions': ['error', 'always', {
+			ignorePackages: true
+		}],
 		'import/order': ['error', {
 			'pathGroups': [
 				{
