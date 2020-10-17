@@ -23,11 +23,11 @@ module.exports = {
 		ecmaVersion: 2020
 	},
 	rules: {
-		'indent': ['error', 'tab'],
 		'no-tabs': 'off',
 		'quote-props': 'off',
 		'prefer-const': 'off',
-		'prefer-arrow-callback': ['error'],
+
+		'indent': ['error', 'tab'],
 
 		'prefer-let/prefer-let': 'error',
 
