@@ -28,6 +28,7 @@ module.exports = {
 		'prefer-const': 'off',
 
 		'indent': ['error', 'tab'],
+		'no-shadow': 'error',
 
 		'prefer-let/prefer-let': 'error',
 
