@@ -31,6 +31,7 @@ module.exports = {
 		'no-shadow': 'error',
 		'no-lonely-if': 'error',
 		'consistent-return': 'error',
+		'prefer-arrow-callback': 'error',
 
 		'prefer-let/prefer-let': 'error',
 
