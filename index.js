@@ -35,11 +35,8 @@ module.exports = {
 		'node/no-unpublished-import': 'off',
 		'node/no-unsupported-features/es-syntax': 'off',
 
-		'import/extensions': ['error', {
-			'js': 'ignorePackages',
-			'vue': 'always',
-			'json': 'always',
-			'styl': 'always'
+		'import/extensions': ['error', 'always', {
+			'js': 'ignorePackages'
 		}],
 		'import/order': ['error', {
 			'pathGroups': [
