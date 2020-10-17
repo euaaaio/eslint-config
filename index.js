@@ -29,6 +29,7 @@ module.exports = {
 
 		'indent': ['error', 'tab'],
 		'no-shadow': 'error',
+		'no-loop-func': 'error',
 		'no-lonely-if': 'error',
 		'consistent-return': 'error',
 		'prefer-rest-params': 'error',
