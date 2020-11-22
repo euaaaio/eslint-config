@@ -1,8 +1,8 @@
 {
   "name": "@postanu/eslint-config",
-  "version": "0.1.0",
-  "description": "Postanu’s ESLint shareable config.",
-  "private": true,
+  "version": "0.0.0",
+	"description": "Postanu’s ESLint shareable config.",
+	"author": "Eduard Aksamitov <e@edaks.co>",
   "repository": "postanu/eslint-config",
   "peerDependencies": {
     "babel-eslint": "^10.1.0",
