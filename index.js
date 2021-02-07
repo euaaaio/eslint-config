@@ -12,7 +12,6 @@ module.exports = {
 	],
 	plugins: [
 		'jest',
-		'mongodb',
 		'security',
 		'prefer-let'
 	],
