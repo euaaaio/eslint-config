@@ -15,7 +15,6 @@ module.exports = {
 		'security',
 		'prefer-let'
 	],
-	parser: 'vue-eslint-parser',
 	parserOptions: {
 		parser: 'babel-eslint',
 		sourceType: 'module',
@@ -40,7 +39,6 @@ module.exports = {
 		'node/no-unpublished-import': 'off',
 		'node/no-unsupported-features/es-syntax': 'off',
 
-		'import/extensions': ['error', 'ignorePackages'],
 		'import/order': ['error', {
 			'pathGroups': [
 				{
@@ -55,6 +53,7 @@ module.exports = {
 			],
 			'newlines-between': 'always'
 		}],
+		'import/extensions': ['error', 'ignorePackages'],
 		'import/newline-after-import': ['error'],
 
 		'security/detect-object-injection': 'off',
