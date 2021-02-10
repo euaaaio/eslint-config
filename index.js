@@ -18,7 +18,7 @@ module.exports = {
 	parserOptions: {
 		parser: 'babel-eslint',
 		sourceType: 'module',
-		ecmaVersion: 2020
+		ecmaVersion: 2021
 	},
 	rules: {
 		'no-tabs': 'off',
