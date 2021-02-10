@@ -40,9 +40,7 @@ module.exports = {
 		'node/no-unpublished-import': 'off',
 		'node/no-unsupported-features/es-syntax': 'off',
 
-		'import/extensions': ['error', 'always', {
-			'js': 'ignorePackages'
-		}],
+		'import/extensions': ['error', 'ignorePackages'],
 		'import/order': ['error', {
 			'pathGroups': [
 				{
