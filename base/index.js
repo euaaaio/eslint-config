@@ -29,6 +29,7 @@ module.exports = {
 		'camelcase': 'off',
 		'quote-props': 'off',
 		'comma-dangle': ['error', 'never'],
+		'arrow-parens': ['error', 'as-needed'],
 		'no-loop-func': 'error',
 		'no-lonely-if': 'error',
 		'prefer-const': 'off',
@@ -85,7 +86,9 @@ module.exports = {
 				req: false,
 				res: false,
 				env: false,
-				ctx: false
+				ctx: false,
+				args: false,
+				props: false
 			},
 			whitelist: {
 				'isDev': true,
