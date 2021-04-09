@@ -83,6 +83,7 @@ module.exports = {
 		'unicorn/prevent-abbreviations': ['error', {
 			replacements: {
 				db: false,
+				ref: false,
 				req: false,
 				res: false,
 				env: false,
