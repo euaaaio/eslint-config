@@ -78,6 +78,7 @@ module.exports = {
 		// unicorn
 		'unicorn/no-null': 'off',
 		'unicorn/filename-case': 'off',
+		'unicorn/no-array-for-each': 'off',
 		'unicorn/prefer-starts-ends-with': 'error',
 		'unicorn/prefer-exponentiation-operator': 'error',
 		'unicorn/prevent-abbreviations': ['error', {
