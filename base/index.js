@@ -79,23 +79,8 @@ module.exports = {
 		'unicorn/no-null': 'off',
 		'unicorn/filename-case': 'off',
 		'unicorn/no-array-for-each': 'off',
+		'unicorn/prevent-abbreviations': 'off',
 		'unicorn/prefer-starts-ends-with': 'error',
 		'unicorn/prefer-exponentiation-operator': 'error',
-		'unicorn/prevent-abbreviations': ['error', {
-			replacements: {
-				db: false,
-				ref: false,
-				req: false,
-				res: false,
-				env: false,
-				ctx: false,
-				args: false,
-				props: false
-			},
-			whitelist: {
-				'isDev': true,
-				'isProd': true
-			}
-		}]
 	}
 }
