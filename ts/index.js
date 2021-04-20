@@ -67,6 +67,7 @@ module.exports = {
 					default: 'array-simple',
 					readonly: 'array-simple'
 				}],
+				'@typescript-eslint/ban-ts-comment': 'off',
 				'@typescript-eslint/await-thenable': 'error',
 				'@typescript-eslint/no-explicit-any': 'error',
 				'@typescript-eslint/member-delimiter-style': ['error', {
