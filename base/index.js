@@ -81,6 +81,6 @@ module.exports = {
 		'unicorn/no-array-for-each': 'off',
 		'unicorn/prevent-abbreviations': 'off',
 		'unicorn/prefer-starts-ends-with': 'error',
-		'unicorn/prefer-exponentiation-operator': 'error',
+		'unicorn/prefer-exponentiation-operator': 'error'
 	}
 }
