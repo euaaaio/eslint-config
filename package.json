@@ -1,6 +1,6 @@
 {
   "name": "@postanu/eslint-config",
-  "version": "3.1.5",
+  "version": "3.1.6",
   "description": "ESLint shareable config for Postanu",
   "author": "Eduard Aksamitov",
   "license": "MIT",
