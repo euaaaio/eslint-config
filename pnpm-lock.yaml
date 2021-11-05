@@ -7,7 +7,7 @@ specifiers:
   eslint-config-standard: ^16.0.3
   eslint-plugin-import: ^2.25.2
   eslint-plugin-node: ^11.1.0
-  eslint-plugin-prefer-let: ^3.0.0
+  eslint-plugin-prefer-let: ^3.0.1
   eslint-plugin-promise: ^5.1.1
   eslint-plugin-security: ^1.4.0
   eslint-plugin-unicorn: ^37.0.1
@@ -21,7 +21,7 @@ devDependencies:
   eslint-config-standard: 16.0.3_0e7aa85332991e897b6a90eef80a6a17
   eslint-plugin-import: 2.25.2_eslint@8.1.0
   eslint-plugin-node: 11.1.0_eslint@8.1.0
-  eslint-plugin-prefer-let: 3.0.0
+  eslint-plugin-prefer-let: 3.0.1
   eslint-plugin-promise: 5.1.1_eslint@8.1.0
   eslint-plugin-security: 1.4.0
   eslint-plugin-unicorn: 37.0.1_eslint@8.1.0
@@ -830,8 +830,8 @@ packages:
       semver: 6.3.0
     dev: true
 
-  /eslint-plugin-prefer-let/3.0.0:
-    resolution: {integrity: sha512-5VfdlbYohV9vj0EecN2vHp1yswbvs/rLAnp4QLzQKlOaO/phIVKdBOljQftnWhbr+ucp1f7Wo4uUBf5j/+ku+A==}
+  /eslint-plugin-prefer-let/3.0.1:
+    resolution: {integrity: sha512-vbznkkBSXB63d4o1o0NIm5C2ey3V5wKr/25dAvPdydQXdowAcnr69cbLgxd2YAG81IV5eddCO55Lp6gL7wSE4w==}
     engines: {node: '>=0.10.0'}
     dependencies:
       requireindex: 1.2.0
