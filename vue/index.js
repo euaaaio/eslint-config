@@ -19,6 +19,7 @@ module.exports = {
 	rules: {
 		'vue/html-indent': ['error', 'tab'],
 
+		'import/named': 'off',
 		'import/extensions': ['error', 'ignorePackages', {
 			'ts': 'never'
 		}]
