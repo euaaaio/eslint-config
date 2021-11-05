@@ -10,7 +10,7 @@ specifiers:
   eslint-plugin-prefer-let: ^3.0.1
   eslint-plugin-promise: ^5.1.1
   eslint-plugin-security: ^1.4.0
-  eslint-plugin-unicorn: ^37.0.1
+  eslint-plugin-unicorn: ^38.0.0
   eslint-plugin-vue: ^8.0.3
   typescript: ^4.4.4
 
@@ -24,7 +24,7 @@ devDependencies:
   eslint-plugin-prefer-let: 3.0.1
   eslint-plugin-promise: 5.1.1_eslint@8.1.0
   eslint-plugin-security: 1.4.0
-  eslint-plugin-unicorn: 37.0.1_eslint@8.1.0
+  eslint-plugin-unicorn: 38.0.0_eslint@8.1.0
   eslint-plugin-vue: 8.0.3_eslint@8.1.0
   typescript: 4.4.4
 
@@ -852,8 +852,8 @@ packages:
       safe-regex: 1.1.0
     dev: true
 
-  /eslint-plugin-unicorn/37.0.1_eslint@8.1.0:
-    resolution: {integrity: sha512-E1jq5u9ojnadisJcPi+hMXTGSiIzkIUMDvWsBudsCGXvKUB2aNSU2TcfyW2/jAS5A4ryBXfzxLykMxX1EdluSQ==}
+  /eslint-plugin-unicorn/38.0.0_eslint@8.1.0:
+    resolution: {integrity: sha512-8Ut3S0RTkk+9T90RmIi1NqiJ4AVCreaMjHaIXxO/IgYCNp+zxixj8Q3eXikf8RZi4vwytxefVqx6mU5LSEEx2w==}
     engines: {node: '>=12'}
     peerDependencies:
       eslint: '>=7.32.0'
