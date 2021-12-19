@@ -82,6 +82,10 @@ module.exports = {
 				'@typescript-eslint/no-misused-promises': 'error',
 				'@typescript-eslint/prefer-optional-chain': 'error',
 				'@typescript-eslint/restrict-plus-operands': 'error',
+				'@typescript-eslint/consistent-type-exports': 'error',
+				'@typescript-eslint/consistent-type-imports': ['error', {
+					prefer: 'type-imports'
+				}],
 				'@typescript-eslint/no-unnecessary-condition': 'error',
 				'@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 				'@typescript-eslint/lines-between-class-members': 'error',
