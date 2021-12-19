@@ -83,6 +83,7 @@ module.exports = {
 				'@typescript-eslint/prefer-optional-chain': 'error',
 				'@typescript-eslint/restrict-plus-operands': 'error',
 				'@typescript-eslint/no-unnecessary-condition': 'error',
+				'@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 				'@typescript-eslint/lines-between-class-members': 'error',
 				'@typescript-eslint/no-confusing-void-expression': 'error',
 				'@typescript-eslint/adjacent-overload-signatures': 'error',
