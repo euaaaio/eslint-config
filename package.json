@@ -2,7 +2,7 @@
   "name": "@postanu/eslint-config",
   "version": "3.8.0",
   "description": "ESLint shareable config for Postanu",
-  "author": "Eduard Aksamitov",
+  "author": "Eduard Aksamitov <e@euaaaio.ru>",
   "license": "MIT",
   "homepage": "https://postanu.com/",
   "repository": "postanu/eslint-config",
