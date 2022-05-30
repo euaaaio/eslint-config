@@ -11,7 +11,7 @@ module.exports = {
 		'standard',
 		'plugin:import/errors',
 		'plugin:import/warnings',
-		'plugin:node/recommended',
+		'plugin:n/recommended',
 		'plugin:unicorn/recommended',
 		'plugin:security/recommended'
 	],
@@ -67,9 +67,9 @@ module.exports = {
 		'import/newline-after-import': ['error'],
 
 		// node
-		'node/no-missing-import': 'off',
-		'node/no-unpublished-import': 'off',
-		'node/no-unsupported-features/es-syntax': 'off',
+		'n/no-missing-import': 'off',
+		'n/no-unpublished-import': 'off',
+		'n/no-unsupported-features/es-syntax': 'off',
 
 		'prefer-let/prefer-let': 'error',
 
