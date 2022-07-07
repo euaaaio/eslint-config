@@ -6,6 +6,14 @@
   "license": "MIT",
   "homepage": "https://postanu.com/",
   "repository": "postanu/eslint-config",
+  "peerDependenciesMeta": {
+    "eslint-plugin-vue": {
+      "optional": true
+    },
+    "eslint-plugin-vue-pug": {
+      "optional": true
+    }
+  },
   "peerDependencies": {
     "@typescript-eslint/eslint-plugin": ">=5.8.1",
     "@typescript-eslint/parser": ">=5.8.1",
