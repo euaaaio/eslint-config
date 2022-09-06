@@ -1,4 +1,6 @@
-module.exports = {
+let { defineConfig } = require('eslint-define-config')
+
+module.exports = defineConfig({
 	extends: [
 		'../base'
 	],
@@ -99,4 +101,4 @@ module.exports = {
 			}
 		}
 	]
-}
+})

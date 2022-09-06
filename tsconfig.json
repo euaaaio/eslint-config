@@ -5,6 +5,7 @@
     "strict": true,
     "noEmit": true,
     "allowJs": true,
+		"checkJs": true,
     "sourceMap": true,
     "noImplicitAny": false,
     "esModuleInterop": true,

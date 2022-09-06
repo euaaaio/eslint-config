@@ -1,4 +1,6 @@
-module.exports = {
+let { defineConfig } = require('eslint-define-config')
+
+module.exports = defineConfig({
 	extends: [
 		'plugin:vue/vue3-recommended',
 		'plugin:vue-pug/vue3-recommended',
@@ -30,4 +32,4 @@ module.exports = {
 			'ts': 'never'
 		}]
 	}
-}
+})

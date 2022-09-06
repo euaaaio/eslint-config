@@ -1,10 +1,12 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@types/node': ^18.7.15
   '@typescript-eslint/eslint-plugin': ^5.36.2
   '@typescript-eslint/parser': ^5.36.2
   eslint: ^8.23.0
   eslint-config-standard: ^17.0.0
+  eslint-define-config: ^1.7.0
   eslint-plugin-import: ^2.26.0
   eslint-plugin-n: ^15.2.5
   eslint-plugin-prefer-let: ^3.0.1
@@ -15,7 +17,11 @@ specifiers:
   eslint-plugin-vue-pug: ^0.5.4
   typescript: ^4.8.2
 
+dependencies:
+  eslint-define-config: 1.7.0
+
 devDependencies:
+  '@types/node': 18.7.15
   '@typescript-eslint/eslint-plugin': 5.36.2_iurrlxgqcgk5svigzxakafpeuu
   '@typescript-eslint/parser': 5.36.2_yqf6kl63nyoq5megxukfnom5rm
   eslint: 8.23.0
@@ -121,6 +127,10 @@ packages:
 
   /@types/json5/0.0.29:
     resolution: {integrity: sha1-7ihweulOEdK4J7y+UnC86n8+ce4=}
+    dev: true
+
+  /@types/node/18.7.15:
+    resolution: {integrity: sha512-XnjpaI8Bgc3eBag2Aw4t2Uj/49lLBSStHWfqKvIuXD7FIrZyMLWp8KuAFHAqxMZYTF9l08N1ctUn9YNybZJVmQ==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -588,6 +598,11 @@ packages:
       eslint-plugin-n: 15.2.5_eslint@8.23.0
       eslint-plugin-promise: 6.0.1_eslint@8.23.0
     dev: true
+
+  /eslint-define-config/1.7.0:
+    resolution: {integrity: sha512-13zk8z8eKO4tpPMvAGV0sa6ok0XuMeu7Zhcizu2bLwcLy1fbNt7/h8PU1wbp9IoIgQETggZJozU0nPXUXOao2g==}
+    engines: {node: '>= 14.6.0', npm: '>= 6.0.0', pnpm: '>= 7.0.0'}
+    dev: false
 
   /eslint-import-resolver-node/0.3.6:
     resolution: {integrity: sha512-0En0w03NRVMn9Uiyn8YRPDKvWjxCWkslUEhGNTdGx15RvPJYQ+lbOlqrlNI2vEAs4pDYK4f/HN2TbDmk5TP0iw==}

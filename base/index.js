@@ -1,4 +1,6 @@
-module.exports = {
+let { defineConfig } = require('eslint-define-config')
+
+module.exports = defineConfig({
 	env: {
 		browser: true,
 		node: true,
@@ -84,4 +86,4 @@ module.exports = {
 		'unicorn/prefer-starts-ends-with': 'error',
 		'unicorn/prefer-exponentiation-operator': 'error'
 	}
-}
+})
