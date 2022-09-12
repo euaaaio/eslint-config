@@ -7,6 +7,15 @@
   "homepage": "https://postanu.com/",
   "repository": "postanu/eslint-config",
   "peerDependenciesMeta": {
+    "typescript": {
+      "optional": true
+    },
+    "@typescript-eslint/eslint-plugin": {
+      "optional": true
+    },
+    "@typescript-eslint/parser": {
+      "optional": true
+    },
     "eslint-plugin-vue": {
       "optional": true
     },
