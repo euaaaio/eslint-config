@@ -21,40 +21,45 @@
     },
     "eslint-plugin-vue-pug": {
       "optional": true
+    },
+    "vue-eslint-parser": {
+      "optional": true
     }
   },
   "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=5.37.0",
-    "@typescript-eslint/parser": ">=5.37.0",
-    "eslint": ">=8.23.0",
+    "@typescript-eslint/eslint-plugin": ">=5.53.0",
+    "@typescript-eslint/parser": ">=5.53.0",
+    "eslint": ">=8.34.0",
     "eslint-config-standard": ">=17.0.0",
-    "eslint-plugin-import": ">=2.26.0",
-    "eslint-plugin-n": ">=15.2.5",
+    "eslint-plugin-import": ">=2.27.5",
+    "eslint-plugin-n": ">=15.6.1",
     "eslint-plugin-prefer-let": ">=3.0.1",
-    "eslint-plugin-promise": ">=6.0.1",
-    "eslint-plugin-security": ">=1.5.0",
-    "eslint-plugin-unicorn": ">=43.0.2",
-    "eslint-plugin-vue": ">=9.4.0",
-    "eslint-plugin-vue-pug": ">=0.5.4",
-    "typescript": ">=4.8.3"
+    "eslint-plugin-promise": ">=6.1.1",
+    "eslint-plugin-security": ">=1.7.1",
+    "eslint-plugin-unicorn": ">=45.0.2",
+    "eslint-plugin-vue": ">=9.9.0",
+    "eslint-plugin-vue-pug": ">=0.5.5",
+    "typescript": ">=4.9.5",
+    "vue-eslint-parser": ">=9.1.0"
   },
   "devDependencies": {
-    "@types/node": "^18.7.16",
-    "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
-    "eslint": "^8.23.1",
+    "@types/node": "^18.14.0",
+    "@typescript-eslint/eslint-plugin": "^5.53.0",
+    "@typescript-eslint/parser": "^5.53.0",
+    "eslint": "^8.34.0",
     "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-n": "^15.2.5",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^15.6.1",
     "eslint-plugin-prefer-let": "^3.0.1",
-    "eslint-plugin-promise": "^6.0.1",
-    "eslint-plugin-security": "^1.5.0",
-    "eslint-plugin-unicorn": "^43.0.2",
-    "eslint-plugin-vue": "^9.4.0",
-    "eslint-plugin-vue-pug": "^0.5.4",
-    "typescript": "^4.8.3"
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-security": "^1.7.1",
+    "eslint-plugin-unicorn": "^45.0.2",
+    "eslint-plugin-vue": "^9.9.0",
+    "eslint-plugin-vue-pug": "^0.5.5",
+    "typescript": "^4.9.5",
+    "vue-eslint-parser": "^9.1.0"
   },
   "dependencies": {
-    "eslint-define-config": "^1.7.0"
+    "eslint-define-config": "^1.15.0"
   }
 }
