@@ -55,6 +55,7 @@ module.exports = defineConfig({
 					before: true,
 					after: true
 				}],
+				'@typescript-eslint/no-mixed-enums': 'error',
 				'@typescript-eslint/func-call-spacing': ['error', 'never'],
 				'@typescript-eslint/no-use-before-define': ['error', {
 					functions: false,
@@ -91,6 +92,7 @@ module.exports = defineConfig({
 				'@typescript-eslint/no-unnecessary-condition': 'error',
 				'@typescript-eslint/consistent-type-definitions': ['error', 'interface'],
 				'@typescript-eslint/lines-between-class-members': 'error',
+				'@typescript-eslint/no-import-type-side-effects': 'error',
 				'@typescript-eslint/no-confusing-void-expression': 'error',
 				'@typescript-eslint/adjacent-overload-signatures': 'error',
 				'@typescript-eslint/explicit-function-return-type': 'error',

@@ -24,6 +24,8 @@ module.exports = defineConfig({
 		}
 	},
 	rules: {
+		'vue/no-v-html': 'off',
+		'vue/html-quotes': 'off',
 		'vue/html-indent': ['error', 'tab'],
 		'vue/script-setup-uses-vars': 'error',
 

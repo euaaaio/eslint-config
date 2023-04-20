@@ -44,6 +44,7 @@ module.exports = defineConfig({
 		'prefer-rest-params': 'error',
 		'prefer-arrow-callback': 'error',
 		'no-unsafe-optional-chaining': 'error',
+		'no-new-native-nonconstructor': 'error',
 		'prefer-exponentiation-operator': 'error',
 		'nonblock-statement-body-position': 'error',
 		'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
