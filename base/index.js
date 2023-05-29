@@ -19,6 +19,7 @@ module.exports = defineConfig({
 	],
 	plugins: [
 		'unicorn',
+		'promise',
 		'security',
 		'prefer-let'
 	],
@@ -61,12 +62,13 @@ module.exports = defineConfig({
 			],
 			'pathGroupsExcludedImportTypes': ['builtin'],
 			'groups': [
+				['type'],
 				['builtin', 'external'],
 				['internal', 'parent', 'sibling', 'index']
 			],
 			'newlines-between': 'always'
 		}],
-		'import/extensions': ['error', 'ignorePackages'],
+		'import/extensions': ['error', 'always', { ignorePackages: true }],
 		'import/newline-after-import': ['error'],
 
 		// node
