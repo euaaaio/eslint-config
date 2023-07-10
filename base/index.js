@@ -15,13 +15,15 @@ module.exports = defineConfig({
 		'plugin:import/warnings',
 		'plugin:n/recommended',
 		'plugin:unicorn/recommended',
-		'plugin:security/recommended'
+		'plugin:security/recommended',
+		'plugin:perfectionist/recommended-natural'
 	],
 	plugins: [
 		'unicorn',
 		'promise',
 		'security',
-		'prefer-let'
+		'prefer-let',
+		'perfectionist'
 	],
 	rules: {
 		// common
@@ -53,21 +55,6 @@ module.exports = defineConfig({
 
 		// import
 		'import/no-unresolved': 'off',
-		'import/order': ['error', {
-			'pathGroups': [
-				{
-					pattern: '@/**',
-					group: 'internal'
-				}
-			],
-			'pathGroupsExcludedImportTypes': ['builtin'],
-			'groups': [
-				['type'],
-				['builtin', 'external'],
-				['internal', 'parent', 'sibling', 'index']
-			],
-			'newlines-between': 'always'
-		}],
 		'import/extensions': ['error', 'always', { ignorePackages: true }],
 		'import/newline-after-import': ['error'],
 
@@ -87,6 +74,35 @@ module.exports = defineConfig({
 		'unicorn/no-array-for-each': 'off',
 		'unicorn/prevent-abbreviations': 'off',
 		'unicorn/prefer-starts-ends-with': 'error',
-		'unicorn/prefer-exponentiation-operator': 'error'
+		'unicorn/prefer-exponentiation-operator': 'error',
+
+		// resolves perfectionist conflicts
+		'import/order': 'off',
+		'sort-imports': 'off',
+
+		// perfectionist
+		'perfectionist/sort-imports': [
+			'error',
+			{
+				'groups': [
+					'side-effect',
+					'type',
+					['builtin', 'external'],
+					'internal-type',
+					'internal',
+					['parent-type', 'sibling-type', 'index-type'],
+					['parent', 'sibling', 'index'],
+					'object',
+					'unknown'
+				],
+				'newlines-between': 'always',
+				'order': 'asc',
+				'read-tsconfig': false,
+				'type': 'natural'
+			}
+		],
+		'perfectionist/sort-object-types': 'off',
+		'perfectionist/sort-interfaces': 'off',
+		'perfectionist/sort-objects': 'off'
 	}
 })

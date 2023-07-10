@@ -94,12 +94,15 @@ module.exports = defineConfig({
 				'@typescript-eslint/lines-between-class-members': 'error',
 				'@typescript-eslint/no-import-type-side-effects': 'error',
 				'@typescript-eslint/no-confusing-void-expression': 'error',
-				'@typescript-eslint/adjacent-overload-signatures': 'error',
 				'@typescript-eslint/explicit-function-return-type': 'error',
 				'@typescript-eslint/no-unnecessary-type-assertion': 'error',
 				'@typescript-eslint/no-unnecessary-type-constraint': 'error',
 				'@typescript-eslint/no-non-null-asserted-optional-chain': 'error',
-				'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error'
+				'@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
+
+				// resolves perfectionist conflicts
+				'@typescript-eslint/sort-type-constituents': 'off',
+				'@typescript-eslint/adjacent-overload-signatures': 'off'
 			}
 		}
 	]
