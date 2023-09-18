@@ -84,6 +84,8 @@ module.exports = defineConfig({
 		'perfectionist/sort-imports': [
 			'error',
 			{
+				'type': 'natural',
+				'order': 'asc',
 				'groups': [
 					'side-effect',
 					'type',
@@ -95,10 +97,7 @@ module.exports = defineConfig({
 					'object',
 					'unknown'
 				],
-				'newlines-between': 'always',
-				'order': 'asc',
-				'read-tsconfig': false,
-				'type': 'natural'
+				'newlines-between': 'always'
 			}
 		],
 		'perfectionist/sort-object-types': 'off',
