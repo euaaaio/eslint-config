@@ -100,6 +100,7 @@ module.exports = defineConfig({
 				'newlines-between': 'always'
 			}
 		],
+		'perfectionist/sort-vue-attributes': 'off',
 		'perfectionist/sort-object-types': 'off',
 		'perfectionist/sort-interfaces': 'off',
 		'perfectionist/sort-objects': 'off'
