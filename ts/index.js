@@ -25,6 +25,7 @@ module.exports = defineConfig({
 				// off
 				'semi': 'off',
 				'indent': 'off',
+				'no-shadow': 'off',
 				'brace-style': 'off',
 				'no-loop-func': 'off',
 				'no-redeclare': 'off',
@@ -40,6 +41,7 @@ module.exports = defineConfig({
 				// redefine js → ts
 				'@typescript-eslint/semi': ['error', 'never'],
 				'@typescript-eslint/indent': ['error', 'tab'],
+				'@typescript-eslint/no-shadow': 'error',
 				'@typescript-eslint/brace-style': ['error', '1tbs', {
 					'allowSingleLine': true
 				}],
