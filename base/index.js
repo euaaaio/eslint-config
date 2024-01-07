@@ -15,13 +15,12 @@ module.exports = defineConfig({
 		'plugin:import/warnings',
 		'plugin:n/recommended',
 		'plugin:unicorn/recommended',
-		'plugin:security/recommended',
+		'plugin:security/recommended-legacy',
 		'plugin:perfectionist/recommended-natural'
 	],
 	plugins: [
 		'unicorn',
 		'promise',
-		'security',
 		'prefer-let',
 		'perfectionist'
 	],
