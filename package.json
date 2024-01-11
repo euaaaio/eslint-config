@@ -16,6 +16,9 @@
     "@typescript-eslint/parser": {
       "optional": true
     },
+    "eslint-plugin-astro": {
+      "optional": true
+    },
     "eslint-plugin-vue": {
       "optional": true
     },
@@ -31,6 +34,7 @@
     "@typescript-eslint/parser": ">=6.18.0",
     "eslint": ">=8.56.0",
     "eslint-config-standard": ">=17.1.0",
+    "eslint-plugin-astro": "^0.31.0",
     "eslint-plugin-import": ">=2.29.1",
     "eslint-plugin-n": ">=16.6.1",
     "eslint-plugin-perfectionist": ">=2.5.0",
@@ -49,6 +53,7 @@
     "@typescript-eslint/parser": "^6.18.0",
     "eslint": "^8.56.0",
     "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-astro": "^0.31.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-n": "^16.6.1",
     "eslint-plugin-perfectionist": "^2.5.0",
