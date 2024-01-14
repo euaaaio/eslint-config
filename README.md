@@ -23,5 +23,5 @@ pnpm add --save-dev @postanu/eslint-config eslint eslint-config-standard eslint-
 ### Vue
 
 ```sh
-pnpm add --save-dev @postanu/eslint-config eslint eslint-config-standard eslint-plugin-import eslint-plugin-n eslint-plugin-perfectionist eslint-plugin-prefer-let eslint-plugin-promise eslint-plugin-security eslint-plugin-unicorn typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-astro"
+pnpm add --save-dev @postanu/eslint-config eslint eslint-config-standard eslint-plugin-import eslint-plugin-n eslint-plugin-perfectionist eslint-plugin-prefer-let eslint-plugin-promise eslint-plugin-security eslint-plugin-unicorn typescript @typescript-eslint/eslint-plugin @typescript-eslint/parser eslint-plugin-astro
 ```
