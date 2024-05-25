@@ -2,9 +2,16 @@
 	<div>
 		<h1>Component</h1>
 	</div>
+	<Nested />
 </template>
 
 <script lang="ts" setup>
+import Nested from './nested.vue'
+
+defineProps<{
+	test: string
+}>()
+
 const test = ''
 const test2 = 0
 

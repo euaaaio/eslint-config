@@ -55,17 +55,12 @@ export default defineFlatConfig([
 			'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 			'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
 
-			// import
-			'import/extensions': ['error', 'always', { ignorePackages: true }],
-
 			// node
 			'n/no-missing-import': 'off',
 			'n/no-unpublished-import': 'off',
 			'n/no-unsupported-features/es-syntax': 'off',
 
 			'prefer-let/prefer-let': 'error',
-
-			'security/detect-object-injection': 'off',
 
 			// unicorn
 			'unicorn/no-null': 'off',
@@ -77,7 +72,6 @@ export default defineFlatConfig([
 			'unicorn/prefer-exponentiation-operator': 'error',
 
 			// resolves perfectionist conflicts
-			'import/order': 'off',
 			'sort-imports': 'off',
 
 			// perfectionist
