@@ -1,7 +1,6 @@
 import { defineFlatConfig } from 'eslint-define-config'
 import eslintPluginVue from 'eslint-plugin-vue'
 import eslintPluginTypeScript from 'typescript-eslint'
-import eslintVueParser from 'vue-eslint-parser'
 
 import typescriptConfig from '../ts/index.js'
 
@@ -22,7 +21,6 @@ export default defineFlatConfig([
 	{
 		files: ['*.vue', '**/*.vue'],
 		languageOptions: {
-			parser: eslintVueParser,
 			parserOptions: {
 				parser: eslintPluginTypeScript.parser
 			}
