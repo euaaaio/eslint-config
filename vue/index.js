@@ -1,37 +1,24 @@
-let { defineConfig } = require('eslint-define-config')
+import { defineFlatConfig } from 'eslint-define-config'
+import eslintPluginVue from 'eslint-plugin-vue'
+import eslintPluginTypeScript from 'typescript-eslint'
 
-module.exports = defineConfig({
-	extends: [
-		'plugin:vue/vue3-recommended',
-		'plugin:vue-pug/vue3-recommended',
-		'../ts'
-	],
-	plugins: [
-		'vue'
-	],
-	env: {
-		'vue/setup-compiler-macros': true
-	},
-	parser: 'vue-eslint-parser',
-	parserOptions: {
-		parser: '@typescript-eslint/parser',
-		ecmaVersion: 'latest',
-		extraFileExtensions: ['.vue']
-	},
-	settings: {
-		'import/resolver': {
-			node: { extensions: ['.js', '.ts'] }
+import typescriptConfig from '../ts/index.js'
+
+export default defineFlatConfig([
+	...typescriptConfig,
+	...eslintPluginVue.configs['flat/recommended'],
+	{
+		files: ['*.vue', '**/*.vue'],
+		languageOptions: {
+			parserOptions: {
+				parser: eslintPluginTypeScript.parser
+			}
+		},
+		plugins: {
+			vue: eslintPluginVue
+		},
+		rules: {
+			'vue/html-indent': ['error', 'tab']
 		}
-	},
-	rules: {
-		'vue/no-v-html': 'off',
-		'vue/html-quotes': 'off',
-		'vue/html-indent': ['error', 'tab'],
-		'vue/script-setup-uses-vars': 'error',
-
-		'import/named': 'off',
-		'import/extensions': ['error', 'ignorePackages', {
-			'ts': 'never'
-		}]
 	}
-})
+])

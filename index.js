@@ -1,3 +1,1 @@
-let base = require('./base/index.js')
-
-module.exports = base
+export { default } from './base/index.js'

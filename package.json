@@ -1,72 +1,64 @@
 {
   "name": "@postanu/eslint-config",
-  "version": "5.0.0",
+  "version": "6.0.0-beta.1",
   "description": "ESLint shareable config for Postanu",
   "author": "Eduard Aksamitov <e@euaaaio.ru>",
   "license": "MIT",
   "homepage": "https://postanu.com/",
   "repository": "postanu/eslint-config",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./ts": "./ts/index.js",
+    "./vue": "./vue/index.js",
+    "./astro": "./astro/index.js",
+    "./package.json": "./package.json"
+  },
+  "dependencies": {
+    "@eslint/compat": "^1.0.1",
+    "@eslint/eslintrc": "^3.1.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-define-config": "^2.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^17.7.0",
+    "eslint-plugin-perfectionist": "^2.10.0",
+    "eslint-plugin-prefer-let": "^3.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-unicorn": "^53.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=9.3.0",
+    "eslint-plugin-astro": ">=1.2.0",
+    "eslint-plugin-vue": ">=9.26.0",
+    "typescript": ">=5.4.5",
+    "typescript-eslint": ">=7.10.0"
+  },
   "peerDependenciesMeta": {
-    "typescript": {
-      "optional": true
-    },
-    "@typescript-eslint/eslint-plugin": {
-      "optional": true
-    },
-    "@typescript-eslint/parser": {
-      "optional": true
-    },
     "eslint-plugin-astro": {
       "optional": true
     },
     "eslint-plugin-vue": {
       "optional": true
     },
-    "eslint-plugin-vue-pug": {
+    "typescript-eslint": {
       "optional": true
     },
-    "vue-eslint-parser": {
+    "typescript": {
       "optional": true
     }
   },
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": ">=6.18.0",
-    "@typescript-eslint/parser": ">=6.18.0",
-    "eslint": ">=8.56.0",
-    "eslint-config-standard": ">=17.1.0",
-    "eslint-plugin-astro": ">=0.31.0",
-    "eslint-plugin-import": ">=2.29.1",
-    "eslint-plugin-n": ">=16.6.1",
-    "eslint-plugin-perfectionist": ">=2.5.0",
-    "eslint-plugin-prefer-let": ">=3.0.1",
-    "eslint-plugin-promise": ">=6.1.1",
-    "eslint-plugin-security": ">=2.1.0",
-    "eslint-plugin-unicorn": ">=50.0.1",
-    "eslint-plugin-vue": ">=9.19.2",
-    "eslint-plugin-vue-pug": ">=0.6.1",
-    "typescript": ">=5.3.3",
-    "vue-eslint-parser": ">=9.3.2"
-  },
   "devDependencies": {
-    "@types/node": "^20.10.6",
-    "@typescript-eslint/eslint-plugin": "^6.18.0",
-    "@typescript-eslint/parser": "^6.18.0",
-    "eslint": "^8.56.0",
-    "eslint-config-standard": "^17.1.0",
-    "eslint-plugin-astro": "^0.31.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-n": "^16.6.1",
-    "eslint-plugin-perfectionist": "^2.5.0",
-    "eslint-plugin-prefer-let": "^3.0.1",
-    "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-security": "^2.1.0",
-    "eslint-plugin-unicorn": "^50.0.1",
-    "eslint-plugin-vue": "^9.19.2",
-    "eslint-plugin-vue-pug": "^0.6.1",
-    "typescript": "^5.3.3",
-    "vue-eslint-parser": "^9.3.2"
+    "eslint": "^9.3.0",
+    "eslint-plugin-astro": "^1.2.0",
+    "eslint-plugin-vue": "^9.26.0",
+    "typescript": "^5.4.5",
+    "typescript-eslint": "^7.10.0"
   },
-  "dependencies": {
-    "eslint-define-config": "^2.1.0"
+  "pnpm": {
+    "peerDependencyRules": {
+      "allowAny": [
+        "eslint"
+      ]
+    }
   }
 }
