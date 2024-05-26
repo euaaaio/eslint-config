@@ -52,8 +52,8 @@ export default defineFlatConfig([
 			'no-new-native-nonconstructor': 'error',
 			'prefer-exponentiation-operator': 'error',
 			'nonblock-statement-body-position': 'error',
-			'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-			'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+			'no-console': 'error',
+			'no-debugger': 'error',
 
 			// node
 			'n/no-missing-import': 'off',
@@ -63,6 +63,7 @@ export default defineFlatConfig([
 			'prefer-let/prefer-let': 'error',
 
 			// unicorn
+			...eslintPluginUnicorn.configs['flat/recommended'].rules,
 			'unicorn/no-null': 'off',
 			'unicorn/filename-case': 'off',
 			'unicorn/prefer-module': 'off',
