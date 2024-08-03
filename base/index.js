@@ -45,6 +45,7 @@ export default defineFlatConfig([
 			'prefer-rest-params': 'error',
 			'prefer-arrow-callback': 'error',
 			'no-irregular-whitespace': 'off',
+			'space-before-function-paren': 'off',
 			'no-unsafe-optional-chaining': 'error',
 			'no-new-native-nonconstructor': 'error',
 			'prefer-exponentiation-operator': 'error',

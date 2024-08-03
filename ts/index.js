@@ -6,6 +6,13 @@ import baseConfig from '../base/index.js'
 export default defineFlatConfig([
 	...baseConfig,
 	{
+		rules: {
+			// resolves conflicts with base config
+			'no-unused-vars': 'off',
+			'func-call-spacing': 'off'
+		}
+	},
+	{
 		files: ['*.ts', '**/*.ts'],
 		languageOptions: {
 			parser: eslintPluginTypeScript.parser,
@@ -17,11 +24,6 @@ export default defineFlatConfig([
 			'@typescript-eslint': eslintPluginTypeScript.plugin
 		},
 		rules: {
-			// resolves conflicts with base config
-			'no-unused-vars': 'off',
-			'func-call-spacing': 'off',
-			'space-before-function-paren': 'off',
-
 			...eslintPluginTypeScript.configs.strictTypeChecked.rules,
 			...eslintPluginTypeScript.configs.stylisticTypeChecked.rules,
 
