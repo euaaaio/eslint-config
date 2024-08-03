@@ -17,6 +17,11 @@ export default defineFlatConfig([
 			'@typescript-eslint': eslintPluginTypeScript.plugin
 		},
 		rules: {
+			// resolves conflicts with base config
+			'no-unused-vars': 'off',
+			'func-call-spacing': 'off',
+			'space-before-function-paren': 'off',
+
 			...eslintPluginTypeScript.configs.strictTypeChecked.rules,
 			...eslintPluginTypeScript.configs.stylisticTypeChecked.rules,
 

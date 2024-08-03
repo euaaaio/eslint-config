@@ -1,9 +1,7 @@
-import { fixupPluginRules } from '@eslint/compat'
 import { FlatCompat } from '@eslint/eslintrc'
 import { defineFlatConfig } from 'eslint-define-config'
 import eslintPluginN from 'eslint-plugin-n'
 import eslintPluginPerfectionist from 'eslint-plugin-perfectionist'
-import eslintPluginPreferLet from 'eslint-plugin-prefer-let'
 import eslintPluginPromise from 'eslint-plugin-promise'
 import eslintPluginUnicorn from 'eslint-plugin-unicorn'
 
@@ -23,8 +21,7 @@ export default defineFlatConfig([
 			n: eslintPluginN,
 			promise: eslintPluginPromise,
 			unicorn: eslintPluginUnicorn,
-			perfectionist: eslintPluginPerfectionist,
-			'prefer-let': fixupPluginRules(eslintPluginPreferLet)
+			perfectionist: eslintPluginPerfectionist
 		},
 		rules: {
 			// common
@@ -60,8 +57,6 @@ export default defineFlatConfig([
 			'n/no-unpublished-import': 'off',
 			'n/no-unsupported-features/es-syntax': 'off',
 
-			'prefer-let/prefer-let': 'error',
-
 			// unicorn
 			...eslintPluginUnicorn.configs['flat/recommended'].rules,
 			'unicorn/no-null': 'off',
@@ -77,6 +72,8 @@ export default defineFlatConfig([
 
 			// perfectionist
 			...eslintPluginPerfectionist.configs['recommended-alphabetical'].rules,
+			'perfectionist/sort-enums': 'off',
+			'perfectionist/sort-intersection-types': 'off',
 			'perfectionist/sort-imports': [
 				'error',
 				{
@@ -93,7 +90,8 @@ export default defineFlatConfig([
 						'object',
 						'unknown'
 					],
-					'newlines-between': 'always'
+					'newlines-between': 'always',
+					'internal-pattern': ['@/**']
 				}
 			],
 			'perfectionist/sort-vue-attributes': 'off',
