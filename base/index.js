@@ -25,11 +25,11 @@ export default defineFlatConfig([
 		},
 		rules: {
 			// common
-			'indent': ['error', 'tab'],
-			'quotes': ['error', 'single'],
+			indent: ['error', 'tab'],
+			quotes: ['error', 'single'],
 			'no-tabs': 'off',
 			'no-shadow': 'error',
-			'camelcase': 'off',
+			camelcase: 'off',
 			'quote-props': 'off',
 			'comma-dangle': ['error', 'never'],
 			'arrow-parens': ['error', 'as-needed'],
@@ -78,9 +78,9 @@ export default defineFlatConfig([
 			'perfectionist/sort-imports': [
 				'error',
 				{
-					'type': 'natural',
-					'order': 'asc',
-					'groups': [
+					type: 'natural',
+					order: 'asc',
+					groups: [
 						'side-effect',
 						'type',
 						['builtin', 'external'],
@@ -91,8 +91,31 @@ export default defineFlatConfig([
 						'object',
 						'unknown'
 					],
-					'newlines-between': 'always',
-					'internal-pattern': ['@/**']
+					newlinesBetween: 'always',
+					internalPattern: ['@/**']
+				}
+			],
+			'perfectionist/sort-union-types': [
+				'error',
+				{
+					type: 'alphabetical',
+					order: 'asc',
+					ignoreCase: true,
+					groups: [
+						'nullish',
+						'conditional',
+						'function',
+						'import',
+						'intersection',
+						'keyword',
+						'literal',
+						'named',
+						'object',
+						'operator',
+						'tuple',
+						'union',
+						'unknown'
+					]
 				}
 			],
 			'perfectionist/sort-vue-attributes': 'off',

@@ -5,3 +5,4 @@ for (const i in array) {
 }
 
 
+type A = boolean | null
