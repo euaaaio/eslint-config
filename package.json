@@ -27,6 +27,7 @@
     "eslint-plugin-unicorn": "^55.0.0"
   },
   "peerDependencies": {
+    "astro-eslint-parser": "^1.0.2",
     "eslint": ">=9.3.0",
     "eslint-plugin-astro": ">=1.2.0",
     "eslint-plugin-vue": ">=9.26.0",
@@ -36,6 +37,9 @@
   },
   "peerDependenciesMeta": {
     "eslint-plugin-astro": {
+      "optional": true
+    },
+    "astro-eslint-parser": {
       "optional": true
     },
     "eslint-plugin-vue": {
@@ -52,6 +56,7 @@
     }
   },
   "devDependencies": {
+    "astro-eslint-parser": "^1.0.2",
     "eslint": "^9.9.0",
     "eslint-plugin-astro": "^1.2.3",
     "eslint-plugin-vue": "^9.27.0",

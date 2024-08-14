@@ -26,8 +26,8 @@ pnpm add --save-dev @postanu/eslint-config eslint typescript typescript-eslint e
 pnpm add --save-dev @postanu/eslint-config eslint typescript typescript-eslint eslint-plugin-vue eslint-plugin-vue-pug
 ```
 
-### Astro + TypeScript (TODO: refactor to flat config)
+### Astro + TypeScript
 
 ```sh
-pnpm add --save-dev @postanu/eslint-config eslint typescript typescript-eslint eslint-plugin-astro
+pnpm add --save-dev @postanu/eslint-config eslint typescript typescript-eslint eslint-plugin-astro astro-eslint-parser
 ```
