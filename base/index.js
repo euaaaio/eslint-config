@@ -65,8 +65,7 @@ export default defineFlatConfig([
 			'unicorn/prefer-module': 'off',
 			'unicorn/no-array-for-each': 'off',
 			'unicorn/prevent-abbreviations': 'off',
-			'unicorn/prefer-starts-ends-with': 'error',
-			'unicorn/prefer-exponentiation-operator': 'error',
+			'unicorn/prefer-string-starts-ends-with': 'error',
 
 			// resolves perfectionist conflicts
 			'sort-imports': 'off',
@@ -92,7 +91,7 @@ export default defineFlatConfig([
 						'unknown'
 					],
 					newlinesBetween: 'always',
-					internalPattern: ['@/**']
+					internalPattern: ['^@/.+']
 				}
 			],
 			'perfectionist/sort-union-types': [
