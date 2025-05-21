@@ -1,4 +1,3 @@
-import { defineFlatConfig } from 'eslint-define-config'
 import eslintPluginVue from 'eslint-plugin-vue'
 import eslintPluginTypeScript from 'typescript-eslint'
 
@@ -15,7 +14,7 @@ let cleanedTsConfig = typescriptConfig.map(config => {
 	return cleaned
 })
 
-export default defineFlatConfig([
+export default [
 	...cleanedTsConfig,
 	...eslintPluginVue.configs['flat/recommended'],
 	{
@@ -42,4 +41,4 @@ export default defineFlatConfig([
 			}
 		}
 	}
-])
+]

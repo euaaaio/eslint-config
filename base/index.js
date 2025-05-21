@@ -1,5 +1,4 @@
 import { FlatCompat } from '@eslint/eslintrc'
-import { defineFlatConfig } from 'eslint-define-config'
 import eslintPluginN from 'eslint-plugin-n'
 import eslintPluginPerfectionist from 'eslint-plugin-perfectionist'
 import eslintPluginPromise from 'eslint-plugin-promise'
@@ -11,7 +10,7 @@ let compat = new FlatCompat({
 
 let standard = compat.extends('eslint-config-standard')
 
-export default defineFlatConfig([
+export default [
 	...standard,
 	{
 		languageOptions: {
@@ -123,4 +122,4 @@ export default defineFlatConfig([
 			'perfectionist/sort-objects': 'off'
 		}
 	}
-])
+]

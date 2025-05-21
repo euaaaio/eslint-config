@@ -1,10 +1,9 @@
 import eslintConfigPostanu from '@postanu/eslint-config/ts'
 import astroParserAstro from 'astro-eslint-parser'
-import { defineFlatConfig } from 'eslint-define-config'
 import eslintPluginAstro from 'eslint-plugin-astro'
 import eslintPluginTypeScript from 'typescript-eslint'
 
-export default defineFlatConfig([
+export default [
 	...eslintConfigPostanu,
 	...eslintPluginAstro.configs.recommended,
 	{
@@ -44,4 +43,4 @@ export default defineFlatConfig([
 			]
 		}
 	}
-])
+]

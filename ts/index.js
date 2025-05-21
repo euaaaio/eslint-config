@@ -1,9 +1,8 @@
-import { defineFlatConfig } from 'eslint-define-config'
 import eslintPluginTypeScript from 'typescript-eslint'
 
 import baseConfig from '../base/index.js'
 
-export default defineFlatConfig([
+export default [
 	...baseConfig,
 	{
 		rules: {
@@ -32,4 +31,4 @@ export default defineFlatConfig([
 			'@typescript-eslint/adjacent-overload-signatures': 'off'
 		}
 	}
-])
+]
