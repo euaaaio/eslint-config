@@ -2,12 +2,14 @@
   "compilerOptions": {
     "module": "esnext",
     "target": "esnext",
+    "baseUrl": ".",
     "strict": true,
-    "noEmit": true,
     "allowJs": true,
-    "sourceMap": true,
-    "noImplicitAny": false,
+    "skipLibCheck": true,
     "esModuleInterop": true,
-    "moduleResolution": "node"
-  }
+    "moduleResolution": "bundler"
+  },
+  "include": [
+    "**/*.ts"
+  ],
 }
