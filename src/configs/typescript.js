@@ -19,7 +19,9 @@ export function typescript() {
 			},
 			rules: {
 				...typescriptEslintPlugin.configs['stylistic-type-checked'].rules,
-				...typescriptEslintPlugin.configs['strict-type-checked'].rules
+				...typescriptEslintPlugin.configs['strict-type-checked'].rules,
+
+				'@typescript-eslint/consistent-type-definitions': 'off'
 			}
 		}
 	])
