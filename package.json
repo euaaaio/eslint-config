@@ -13,7 +13,7 @@
     "./ts": "./ts/index.js",
     "./vue": "./vue/index.js",
     "./astro": "./astro/index.js",
-    "./factory": "./src/index.ts",
+    "./next": "./src/index.js",
     "./package.json": "./package.json"
   },
   "dependencies": {

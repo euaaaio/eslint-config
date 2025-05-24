@@ -1,13 +1,8 @@
-import typescriptEslintParser from '@typescript-eslint/parser'
-import { Linter } from 'eslint'
-import eslintPluginVue from 'eslint-plugin-vue'
 import { defineConfig } from 'eslint/config'
+import eslintPluginVue from 'eslint-plugin-vue'
+import typescriptEslintParser from '@typescript-eslint/parser'
 
-interface VueOptions {
-	typescript?: boolean
-}
-
-export function vue(options: VueOptions): Linter.Config[] {
+export function vue(options) {
 	return defineConfig([
 		{
 			name: 'postanu/vue',

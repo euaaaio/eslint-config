@@ -1,8 +1,7 @@
 import js from '@eslint/js'
-import { Linter } from 'eslint'
 import { defineConfig } from 'eslint/config'
 
-export function javascript(): Linter.Config[] {
+export function javascript() {
 	return defineConfig([
 		{
 			name: 'postanu/javascript',
@@ -10,7 +9,13 @@ export function javascript(): Linter.Config[] {
 			plugins: {
 				js
 			},
-			extends: ['js/all']
+			extends: ['js/all'],
+			rules: {
+				'func-style': 'off',
+				'no-ternary': 'off',
+				'sort-keys': 'off',
+				'sort-imports': 'off'
+			}
 		}
 	])
 }

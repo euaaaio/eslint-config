@@ -1,9 +1,8 @@
 import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
 import typescriptEslintParser from '@typescript-eslint/parser'
-import { Linter } from 'eslint'
 import { defineConfig } from 'eslint/config'
 
-export function typescript(): Linter.Config[] {
+export function typescript() {
 	return defineConfig([
 		{
 			name: 'postanu/typescript',
@@ -16,7 +15,6 @@ export function typescript(): Linter.Config[] {
 				sourceType: 'module'
 			},
 			plugins: {
-				// @ts-expect-error wrong types
 				'@typescript-eslint': typescriptEslintPlugin
 			},
 			rules: {
