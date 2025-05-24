@@ -13,7 +13,8 @@ export function vue(options) {
 				}
 			},
 			rules: {
-				'vue/no-v-html': 'off'
+				'vue/no-v-html': 'off',
+				'vue/max-attributes-per-line': 'off'
 			}
 		}
 	])
