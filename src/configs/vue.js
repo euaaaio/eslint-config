@@ -11,6 +11,9 @@ export function vue(options) {
 				parserOptions: {
 					parser: options.typescript ? typescriptEslintParser : null
 				}
+			},
+			rules: {
+				'vue/no-v-html': 'off'
 			}
 		}
 	])
