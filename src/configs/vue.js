@@ -9,13 +9,13 @@ export function vue(options) {
 			extends: [...eslintPluginVue.configs['flat/recommended']],
 			languageOptions: {
 				parserOptions: {
-					parser: options.typescript ? typescriptEslintParser : null
-				}
+					parser: options.typescript ? typescriptEslintParser : null,
+				},
 			},
 			rules: {
 				'vue/no-v-html': 'off',
-				'vue/max-attributes-per-line': 'off'
-			}
-		}
+				'vue/max-attributes-per-line': 'off',
+			},
+		},
 	])
 }

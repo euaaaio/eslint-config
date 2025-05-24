@@ -7,15 +7,17 @@ export function javascript() {
 			name: 'postanu/javascript',
 			files: ['**/*.js'],
 			plugins: {
-				js
+				js,
 			},
 			extends: ['js/all'],
 			rules: {
 				'func-style': 'off',
 				'no-ternary': 'off',
 				'sort-keys': 'off',
-				'sort-imports': 'off'
-			}
-		}
+				'sort-imports': 'off',
+				'one-var': 'off',
+				'max-statements': 'off',
+			},
+		},
 	])
 }

@@ -1,4 +1,4 @@
-import { javascript, typescript, vue } from './configs/index.js'
+import { javascript, typescript, vue, stylistic } from './configs/index.js'
 
 export function postanu(options) {
 	const config = []
@@ -12,9 +12,20 @@ export function postanu(options) {
 	if (options.vue) {
 		config.push(
 			vue({
-				typescript: options.typescript
-			})
+				typescript: options.typescript,
+			}),
 		)
+	}
+
+	let stylisticOptions = {}
+	if (!options.stylistic) {
+		stylisticOptions = false
+	} else if (typeof options.stylistic === 'object') {
+		stylisticOptions = options.stylistic
+	}
+
+	if (stylisticOptions) {
+		config.push(stylistic(stylisticOptions))
 	}
 
 	return config.flat()

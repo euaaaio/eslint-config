@@ -10,19 +10,19 @@ export function typescript() {
 			languageOptions: {
 				parser: typescriptEslintParser,
 				parserOptions: {
-					project: true
+					project: true,
 				},
-				sourceType: 'module'
+				sourceType: 'module',
 			},
 			plugins: {
-				'@typescript-eslint': typescriptEslintPlugin
+				'@typescript-eslint': typescriptEslintPlugin,
 			},
 			rules: {
 				...typescriptEslintPlugin.configs['stylistic-type-checked'].rules,
 				...typescriptEslintPlugin.configs['strict-type-checked'].rules,
 
-				'@typescript-eslint/consistent-type-definitions': 'off'
-			}
-		}
+				'@typescript-eslint/consistent-type-definitions': 'off',
+			},
+		},
 	])
 }
