@@ -11,3 +11,5 @@ interface VueOptions {
 export function vue(options: VueOptions): Linter.Config[]
 
 export function stylistic(options: StylisticCustomizeOptions): Linter.Config[]
+
+export function imports(): Linter.Config[]

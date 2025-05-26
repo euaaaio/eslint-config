@@ -1,4 +1,4 @@
-import { javascript, typescript, vue, stylistic } from './configs/index.js'
+import { javascript, typescript, vue, stylistic, imports } from './configs/index.js'
 
 export function postanu(options) {
 	const config = []
@@ -11,6 +11,7 @@ export function postanu(options) {
 
 	if (options.vue) {
 		config.push(
+			imports(),
 			vue({
 				typescript: options.typescript,
 			}),
