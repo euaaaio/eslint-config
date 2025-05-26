@@ -1,5 +1,5 @@
-import { defineConfig } from 'eslint/config'
 import eslintPluginPromise from 'eslint-plugin-promise'
+import { defineConfig } from 'eslint/config'
 
 export function promise() {
 	return defineConfig([{

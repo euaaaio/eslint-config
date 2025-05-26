@@ -1,5 +1,5 @@
-import { defineConfig } from 'eslint/config'
 import stylisticEslintPlugin from '@stylistic/eslint-plugin'
+import { defineConfig } from 'eslint/config'
 
 export function stylistic(options) {
 	const config = stylisticEslintPlugin.configs.customize({

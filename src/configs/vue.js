@@ -1,6 +1,6 @@
-import { defineConfig } from 'eslint/config'
-import eslintPluginVue from 'eslint-plugin-vue'
 import typescriptEslintParser from '@typescript-eslint/parser'
+import eslintPluginVue from 'eslint-plugin-vue'
+import { defineConfig } from 'eslint/config'
 
 export function vue(options) {
 	return defineConfig([

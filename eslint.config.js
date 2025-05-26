@@ -6,4 +6,5 @@ export default postanu({
 	stylistic: {
 		indent: 'tab',
 	},
+	perfectionist: true,
 })

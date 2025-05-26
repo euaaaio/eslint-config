@@ -1,4 +1,13 @@
-import { javascript, typescript, vue, stylistic, imports, promise, ignores } from './configs/index.js'
+import {
+	ignores,
+	imports,
+	javascript,
+	perfectionist,
+	promise,
+	stylistic,
+	typescript,
+	vue,
+} from './configs/index.js'
 
 export function postanu(options) {
 	const config = []
@@ -31,6 +40,10 @@ export function postanu(options) {
 
 	if (stylisticOptions) {
 		config.push(stylistic(stylisticOptions))
+	}
+
+	if (options.perfectionist) {
+		config.push(perfectionist())
 	}
 
 	return config.flat()
