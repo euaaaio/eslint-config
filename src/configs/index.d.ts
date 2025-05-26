@@ -1,6 +1,8 @@
 import type { Linter } from 'eslint'
 import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin'
 
+export function ignores(files?: string[]): Linter.Config[]
+
 export function javascript(): Linter.Config[]
 export function typescript(): Linter.Config[]
 

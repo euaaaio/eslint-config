@@ -1,10 +1,12 @@
 import type { Linter } from 'eslint'
-import type { StylisticOptions } from './types.d.js'
+import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin'
 
 interface PostanuOptions {
+	ignores?: string[]
+
 	typescript?: boolean
 	vue?: boolean
-	stylistic?: boolean | StylisticOptions
+	stylistic?: boolean | StylisticCustomizeOptions
 }
 
 export function postanu(options: PostanuOptions): Linter.Config[]
