@@ -1,4 +1,4 @@
-import eslintPluginImportX from 'eslint-plugin-import'
+import eslintPluginImportX from 'eslint-plugin-import-x'
 import { defineConfig } from 'eslint/config'
 
 export function imports() {
