@@ -3,7 +3,11 @@ import { javascript, typescript, vue, stylistic, imports, promise } from './conf
 export function postanu(options) {
 	const config = []
 
-	config.push(javascript())
+	config.push(
+		javascript(),
+		imports(),
+		promise(),
+	)
 
 	if (options.typescript) {
 		config.push(typescript())
@@ -11,8 +15,6 @@ export function postanu(options) {
 
 	if (options.vue) {
 		config.push(
-			imports(),
-			promise(),
 			vue({
 				typescript: options.typescript,
 			}),
