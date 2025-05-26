@@ -1,6 +1,7 @@
 import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
 import typescriptEslintParser from '@typescript-eslint/parser'
 import { defineConfig } from 'eslint/config'
+import process from 'node:process'
 
 export function typescript() {
 	return defineConfig([
@@ -10,9 +11,10 @@ export function typescript() {
 			languageOptions: {
 				parser: typescriptEslintParser,
 				parserOptions: {
-					project: true,
+					sourceType: 'module',
+					tsconfigRootDir: process.cwd(),
+					projectService: true,
 				},
-				sourceType: 'module',
 			},
 			plugins: {
 				'@typescript-eslint': typescriptEslintPlugin,
