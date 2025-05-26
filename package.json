@@ -16,6 +16,9 @@
     "./next": "./src/index.js",
     "./package.json": "./package.json"
   },
+  "scripts": {
+    "dev": "pnpx @eslint/config-inspector --config eslint.config.js"
+  },
   "dependencies": {
     "@eslint/compat": "^1.2.9",
     "@eslint/eslintrc": "^3.3.1",
