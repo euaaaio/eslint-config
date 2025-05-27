@@ -2,9 +2,10 @@ import stylisticEslintPlugin from '@stylistic/eslint-plugin'
 import { defineConfig } from 'eslint/config'
 
 export function stylistic(options) {
+	const { overrides, ...customizeOptions } = options
 	const config = stylisticEslintPlugin.configs.customize({
 		braceStyle: '1tbs',
-		...options,
+		...customizeOptions,
 	})
 
 	return defineConfig([
@@ -15,6 +16,7 @@ export function stylistic(options) {
 			},
 			rules: {
 				...config.rules,
+				...overrides,
 			},
 		},
 	])

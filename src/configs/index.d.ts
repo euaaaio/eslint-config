@@ -12,7 +12,11 @@ interface VueOptions {
 
 export function vue(options: VueOptions): Linter.Config[]
 
-export function stylistic(options: StylisticCustomizeOptions): Linter.Config[]
+export type StylisticOptions = StylisticCustomizeOptions & {
+	overrides?: Linter.Config['rules']
+}
+
+export function stylistic(options: StylisticOptions): Linter.Config[]
 export function imports(): Linter.Config[]
 export function promise(): Linter.Config[]
 export function perfectionist(): Linter.Config[]
