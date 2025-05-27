@@ -1,3 +1,11 @@
-import config from './vue/index.js'
+import { postanu } from './src/index.js'
 
-export default [...config]
+export default postanu({
+	typescript: true,
+	vue: true,
+	stylistic: {
+		indent: 'tab',
+	},
+	prettier: true,
+	perfectionist: true,
+})
