@@ -24,6 +24,7 @@ export function typescript() {
 				...typescriptEslintPlugin.configs['strict-type-checked'].rules,
 
 				'@typescript-eslint/consistent-type-definitions': 'off',
+				'@typescript-eslint/restrict-template-expressions': 'off',
 			},
 		},
 	])
