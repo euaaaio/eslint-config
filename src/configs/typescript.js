@@ -25,6 +25,7 @@ export function typescript() {
 
 				'@typescript-eslint/consistent-type-definitions': 'off',
 				'@typescript-eslint/restrict-template-expressions': 'off',
+				'@typescript-eslint/prefer-nullish-coalescing': 'off',
 			},
 		},
 	])
