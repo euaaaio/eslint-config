@@ -6,7 +6,9 @@ interface PostanuOptions {
 
 	typescript?: boolean
 	vue?: boolean
+
 	stylistic?: boolean | StylisticOptions
+	prettier?: boolean
 
 	perfectionist?: boolean
 }

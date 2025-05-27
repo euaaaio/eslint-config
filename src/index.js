@@ -3,6 +3,7 @@ import {
 	imports,
 	javascript,
 	perfectionist,
+	prettier,
 	promise,
 	stylistic,
 	typescript,
@@ -31,15 +32,21 @@ export function postanu(options) {
 		)
 	}
 
-	let stylisticOptions = {}
-	if (!options.stylistic) {
-		stylisticOptions = false
-	} else if (typeof options.stylistic === 'object') {
-		stylisticOptions = options.stylistic
+	if (options.prettier) {
+		config.push(prettier())
 	}
 
-	if (stylisticOptions) {
-		config.push(stylistic(stylisticOptions))
+	if (!options.prettier) {
+		let stylisticOptions = {}
+		if (!options.stylistic) {
+			stylisticOptions = false
+		} else if (typeof options.stylistic === 'object') {
+			stylisticOptions = options.stylistic
+		}
+
+		if (stylisticOptions) {
+			config.push(stylistic(stylisticOptions))
+		}
 	}
 
 	if (options.perfectionist) {
