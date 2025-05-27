@@ -12,8 +12,10 @@ export function ignores(files = []) {
 			],
 		},
 		{
-			name: 'postanu/ignores/git',
-			...gitignore({ strict: false }),
+			...gitignore({
+				name: 'postanu/ignores/git',
+				strict: false,
+			}),
 		},
 	])
 }
