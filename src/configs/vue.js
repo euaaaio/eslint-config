@@ -16,6 +16,7 @@ export function vue(options) {
 				'vue/no-v-html': 'off',
 				'vue/max-attributes-per-line': 'off',
 				'vue/singleline-html-element-content-newline': 'off',
+				'vue/one-component-per-file': 'off',
 			},
 		},
 	])
