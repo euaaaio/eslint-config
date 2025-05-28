@@ -11,7 +11,10 @@ export function unicorn() {
 			rules: {
 				...eslintPluginUnicorn.configs.recommended.rules,
 
-				// Additional rules
+				// Disabled
+				'unicorn/no-null': 'off',
+
+				// Additional
 				'unicorn/better-regex': 'error',
 				'unicorn/custom-error-definition': 'error',
 				'unicorn/prefer-import-meta-properties': 'error',
