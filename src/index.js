@@ -7,6 +7,7 @@ import {
 	promise,
 	stylistic,
 	typescript,
+	unicorn,
 	vue,
 } from './configs/index.js'
 
@@ -18,6 +19,7 @@ export function postanu(options) {
 		javascript(),
 		imports(),
 		promise(),
+		unicorn(),
 	)
 
 	if (options.typescript) {

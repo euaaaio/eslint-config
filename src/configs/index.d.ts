@@ -18,6 +18,7 @@ export type StylisticOptions = StylisticCustomizeOptions & {
 
 export function imports(): Linter.Config[]
 export function promise(): Linter.Config[]
+export function unicorn(): Linter.Config[]
 
 export function prettier(): Linter.Config[]
 export function stylistic(options: StylisticOptions): Linter.Config[]
