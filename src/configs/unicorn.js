@@ -20,6 +20,7 @@ export function unicorn() {
 					replacements: {
 						args: false,
 						attrs: false,
+						params: false,
 						props: false,
 					},
 				}],
