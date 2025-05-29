@@ -23,9 +23,15 @@ export function typescript() {
 				...typescriptEslintPlugin.configs['stylistic-type-checked'].rules,
 				...typescriptEslintPlugin.configs['strict-type-checked'].rules,
 
+				// Disabled
 				'@typescript-eslint/consistent-type-definitions': 'off',
 				'@typescript-eslint/restrict-template-expressions': 'off',
 				'@typescript-eslint/prefer-nullish-coalescing': 'off',
+
+				// Improvements
+				'@typescript-eslint/array-type': ['error', {
+					default: 'array-simple',
+				}],
 			},
 		},
 	])
