@@ -17,6 +17,7 @@ export function unicorn() {
 				'unicorn/no-array-reduce': 'off',
 				'unicorn/no-null': 'off',
 				'unicorn/no-array-callback-reference': 'off',
+				'unicorn/no-object-as-default-parameter': 'off',
 
 				// Improvements
 				'unicorn/prevent-abbreviations': ['error', {
