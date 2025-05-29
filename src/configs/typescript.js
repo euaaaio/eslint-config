@@ -2,24 +2,38 @@ import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
 import typescriptEslintParser from '@typescript-eslint/parser'
 import { defineConfig } from 'eslint/config'
 import process from 'node:process'
+import { javascript } from './javascript.js'
 
-export function typescript() {
+export function typescript(options = {}) {
+	const { extraFileExtensions = [] } = options
+	const files = [
+		'**/*.ts',
+		...extraFileExtensions.map(ext => `**/*${ext}`),
+	]
+
 	return defineConfig([
 		{
 			name: 'euaaaio/typescript',
-			files: ['**/*.ts'],
+			files,
 			languageOptions: {
 				parser: typescriptEslintParser,
 				parserOptions: {
 					sourceType: 'module',
 					tsconfigRootDir: process.cwd(),
 					projectService: true,
+					extraFileExtensions,
 				},
 			},
 			plugins: {
 				'@typescript-eslint': typescriptEslintPlugin,
 			},
 			rules: {
+				...javascript().rules,
+
+				// Disabled JavaScript rules
+				'init-declarations': 'off',
+				'no-redeclare': 'off',
+
 				...typescriptEslintPlugin.configs['stylistic-type-checked'].rules,
 				...typescriptEslintPlugin.configs['strict-type-checked'].rules,
 

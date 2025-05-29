@@ -22,8 +22,17 @@ export function defineConfig(options, ...userConfigs) {
 		unicorn(),
 	)
 
+	const extraFileExtensions = []
+	if (options.vue) {
+		extraFileExtensions.push('.vue')
+	}
+
 	if (options.typescript) {
-		config.push(typescript())
+		config.push(
+			typescript({
+				extraFileExtensions,
+			}),
+		)
 	}
 
 	if (options.vue) {

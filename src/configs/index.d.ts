@@ -4,7 +4,12 @@ import type { Linter } from 'eslint'
 export function ignores(files?: string[]): Linter.Config[]
 
 export function javascript(): Linter.Config[]
-export function typescript(): Linter.Config[]
+
+interface TypescriptOptions {
+	extraFileExtensions?: string[]
+}
+
+export function typescript(options: TypescriptOptions): Linter.Config[]
 
 interface VueOptions {
 	typescript?: boolean
