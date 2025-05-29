@@ -13,6 +13,7 @@ export function unicorn() {
 
 				// Disabled
 				'unicorn/no-null': 'off',
+				'unicorn/no-array-callback-reference': 'off',
 
 				// Improvements
 				'unicorn/prevent-abbreviations': ['error', {
