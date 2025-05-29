@@ -18,6 +18,7 @@ export function unicorn() {
 				'unicorn/prevent-abbreviations': ['error', {
 					replacements: {
 						props: false,
+						args: false,
 					},
 				}],
 
