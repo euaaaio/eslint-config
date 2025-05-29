@@ -26,6 +26,7 @@ export function unicorn() {
 						params: false,
 						props: false,
 						src: false,
+						utils: false,
 					},
 				}],
 
