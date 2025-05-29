@@ -12,6 +12,7 @@ export function unicorn() {
 				...eslintPluginUnicorn.configs.recommended.rules,
 
 				// Disabled
+				'unicorn/explicit-length-check': 'off',
 				'unicorn/prefer-global-this': 'off',
 				'unicorn/no-array-reduce': 'off',
 				'unicorn/no-null': 'off',
