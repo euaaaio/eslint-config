@@ -17,9 +17,9 @@ export function unicorn() {
 				// Improvements
 				'unicorn/prevent-abbreviations': ['error', {
 					replacements: {
-						props: false,
 						args: false,
 						attrs: false,
+						props: false,
 					},
 				}],
 
