@@ -13,4 +13,7 @@ interface PostanuOptions {
 	perfectionist?: boolean
 }
 
-export function postanu(options: PostanuOptions): Linter.Config[]
+export function postanu(
+	options: PostanuOptions,
+	...configs: Linter.Config[]
+): Linter.Config[]

@@ -11,7 +11,7 @@ import {
 	vue,
 } from './configs/index.js'
 
-export function postanu(options) {
+export function postanu(options, ...userConfigs) {
 	const config = []
 
 	config.push(
@@ -54,6 +54,8 @@ export function postanu(options) {
 	if (options.perfectionist) {
 		config.push(perfectionist())
 	}
+
+	config.push(...userConfigs)
 
 	return config.flat()
 }
