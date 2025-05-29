@@ -13,6 +13,7 @@ export function unicorn() {
 
 				// Disabled
 				'unicorn/prefer-global-this': 'off',
+				'unicorn/no-array-reduce': 'off',
 				'unicorn/no-null': 'off',
 				'unicorn/no-array-callback-reference': 'off',
 
