@@ -14,6 +14,13 @@ export function unicorn() {
 				// Disabled
 				'unicorn/no-null': 'off',
 
+				// Improvements
+				'unicorn/prevent-abbreviations': ['error', {
+					replacements: {
+						props: false,
+					},
+				}],
+
 				// Additional
 				'unicorn/better-regex': 'error',
 				'unicorn/custom-error-definition': 'error',
