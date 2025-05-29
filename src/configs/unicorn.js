@@ -24,6 +24,7 @@ export function unicorn() {
 					replacements: {
 						args: false,
 						attrs: false,
+						ext: false,
 						params: false,
 						props: false,
 						ref: false,
