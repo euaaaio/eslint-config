@@ -28,5 +28,35 @@ export function unicorn() {
 				'unicorn/prefer-json-parse-buffer': 'error',
 			},
 		},
+
+		{
+			name: 'postanu/unicorn/vue',
+			files: ['**/*.vue'],
+			rules: {
+				'unicorn/filename-case': ['error', {
+					case: 'pascalCase',
+				}],
+			},
+		},
+
+		{
+			name: 'postanu/unicorn/storybook',
+			files: ['**/*.stories.{js,ts}'],
+			rules: {
+				'unicorn/filename-case': ['error', {
+					case: 'pascalCase',
+				}],
+			},
+		},
+
+		{
+			name: 'postanu/unicorn/testing',
+			files: ['**/*.{spec,test}.{js,ts}'],
+			rules: {
+				'unicorn/filename-case': ['error', {
+					case: 'pascalCase',
+				}],
+			},
+		},
 	])
 }
