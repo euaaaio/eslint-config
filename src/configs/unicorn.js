@@ -31,6 +31,9 @@ export function unicorn() {
 						utils: false,
 					},
 				}],
+				'unicorn/no-useless-undefined': ['error', {
+					checkArguments: false,
+				}],
 
 				// Additional
 				'unicorn/better-regex': 'error',
