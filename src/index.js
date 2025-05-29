@@ -11,7 +11,7 @@ import {
 	vue,
 } from './configs/index.js'
 
-export function postanu(options, ...userConfigs) {
+export function defineConfig(options, ...userConfigs) {
 	const config = []
 
 	config.push(

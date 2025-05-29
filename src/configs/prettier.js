@@ -4,7 +4,7 @@ import { defineConfig } from 'eslint/config'
 
 export function prettier() {
 	return defineConfig([{
-		name: 'postanu/prettier',
+		name: 'euaaaio/prettier',
 		plugins: {
 			prettier: eslintPluginPrettier,
 		},

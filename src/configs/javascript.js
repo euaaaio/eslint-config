@@ -5,7 +5,7 @@ import globals from 'globals'
 export function javascript() {
 	return defineConfig([
 		{
-			name: 'postanu/javascript',
+			name: 'euaaaio/javascript',
 			files: ['**/*.js'],
 			plugins: {
 				js,

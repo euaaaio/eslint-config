@@ -3,7 +3,7 @@ import { defineConfig } from 'eslint/config'
 
 export function imports() {
 	return defineConfig([{
-		name: 'postanu/imports',
+		name: 'euaaaio/imports',
 		plugins: {
 			'import-x': eslintPluginImportX,
 		},

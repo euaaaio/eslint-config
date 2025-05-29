@@ -4,7 +4,7 @@ import { defineConfig } from 'eslint/config'
 export function perfectionist() {
 	return defineConfig([
 		{
-			name: 'postanu/perfectionist',
+			name: 'euaaaio/perfectionist',
 			plugins: {
 				perfectionist: pluginPerfectionist,
 			},

@@ -10,7 +10,7 @@ export function stylistic(options) {
 
 	return defineConfig([
 		{
-			name: 'postanu/stylistic',
+			name: 'euaaaio/stylistic',
 			plugins: {
 				'@stylistic': stylisticEslintPlugin,
 			},

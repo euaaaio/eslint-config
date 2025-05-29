@@ -6,7 +6,7 @@ import process from 'node:process'
 export function typescript() {
 	return defineConfig([
 		{
-			name: 'postanu/typescript',
+			name: 'euaaaio/typescript',
 			files: ['**/*.ts'],
 			languageOptions: {
 				parser: typescriptEslintParser,

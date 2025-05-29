@@ -4,7 +4,7 @@ import { defineConfig } from 'eslint/config'
 export function unicorn() {
 	return defineConfig([
 		{
-			name: 'postanu/unicorn',
+			name: 'euaaaio/unicorn',
 			plugins: {
 				unicorn: eslintPluginUnicorn,
 			},
@@ -44,7 +44,7 @@ export function unicorn() {
 		},
 
 		{
-			name: 'postanu/unicorn/vue',
+			name: 'euaaaio/unicorn/vue',
 			files: ['**/*.vue'],
 			rules: {
 				'unicorn/filename-case': ['error', {
@@ -54,7 +54,7 @@ export function unicorn() {
 		},
 
 		{
-			name: 'postanu/unicorn/storybook',
+			name: 'euaaaio/unicorn/storybook',
 			files: ['**/*.stories.{js,ts}'],
 			rules: {
 				'unicorn/filename-case': ['error', {
@@ -64,7 +64,7 @@ export function unicorn() {
 		},
 
 		{
-			name: 'postanu/unicorn/testing',
+			name: 'euaaaio/unicorn/testing',
 			files: ['**/*.{spec,test}.{js,ts}'],
 			rules: {
 				'unicorn/filename-case': ['error', {

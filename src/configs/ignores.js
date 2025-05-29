@@ -5,7 +5,7 @@ import { GLOB_EXCLUDE } from '../globs.js'
 export function ignores(files = []) {
 	return defineConfig([
 		{
-			name: 'postanu/ignores',
+			name: 'euaaaio/ignores',
 			ignores: [
 				...GLOB_EXCLUDE,
 				...files,
@@ -13,7 +13,7 @@ export function ignores(files = []) {
 		},
 		{
 			...gitignore({
-				name: 'postanu/ignores/git',
+				name: 'euaaaio/ignores/git',
 				strict: false,
 			}),
 		},

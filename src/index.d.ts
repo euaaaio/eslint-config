@@ -1,7 +1,7 @@
 import type { Linter } from 'eslint'
 import type { StylisticOptions } from './configs'
 
-interface PostanuOptions {
+interface DefineConfigOptions {
 	ignores?: string[]
 
 	typescript?: boolean
@@ -13,7 +13,7 @@ interface PostanuOptions {
 	perfectionist?: boolean
 }
 
-export function postanu(
-	options: PostanuOptions,
+export function defineConfig(
+	options: DefineConfigOptions,
 	...configs: Linter.Config[]
 ): Linter.Config[]

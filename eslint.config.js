@@ -1,6 +1,6 @@
-import { postanu } from './src/index.js'
+import { defineConfig } from './src/index.js'
 
-export default postanu({
+export default defineConfig({
 	typescript: true,
 	vue: true,
 	stylistic: {

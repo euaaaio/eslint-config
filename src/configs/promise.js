@@ -3,7 +3,7 @@ import { defineConfig } from 'eslint/config'
 
 export function promise() {
 	return defineConfig([{
-		name: 'postanu/promise',
+		name: 'euaaaio/promise',
 		plugins: {
 			promise: eslintPluginPromise,
 		},

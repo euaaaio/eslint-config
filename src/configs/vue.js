@@ -5,7 +5,7 @@ import { defineConfig } from 'eslint/config'
 export function vue(options) {
 	return defineConfig([
 		{
-			name: 'postanu/vue',
+			name: 'euaaaio/vue',
 			extends: [...eslintPluginVue.configs['flat/recommended']],
 			languageOptions: {
 				parserOptions: {
