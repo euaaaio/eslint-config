@@ -19,6 +19,7 @@ export function unicorn() {
 					replacements: {
 						props: false,
 						args: false,
+						attrs: false,
 					},
 				}],
 
