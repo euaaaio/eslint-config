@@ -12,6 +12,7 @@ export function unicorn() {
 				...eslintPluginUnicorn.configs.recommended.rules,
 
 				// Disabled
+				'unicorn/prefer-global-this': 'off',
 				'unicorn/no-null': 'off',
 				'unicorn/no-array-callback-reference': 'off',
 
