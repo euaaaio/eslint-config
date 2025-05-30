@@ -43,6 +43,7 @@ export function typescript(options = {}) {
 				'@typescript-eslint/prefer-nullish-coalescing': 'off',
 				'@typescript-eslint/no-empty-function': 'off',
 				'@typescript-eslint/no-unsafe-argument': 'off',
+				'@typescript-eslint/no-unsafe-member-access': 'off',
 
 				// Improvements
 				'@typescript-eslint/array-type': ['error', {
