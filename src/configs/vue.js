@@ -33,6 +33,16 @@ export function vue(options = {}) {
 				'@typescript-eslint/prefer-function-type': 'off',
 
 				'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
+				'vue/define-macros-order': ['error', {
+					order: [
+						'defineOptions',
+						'defineModel',
+						'defineProps',
+						'defineEmits',
+						'defineSlots',
+					],
+					defineExposeLast: true,
+				}],
 				'vue/no-v-html': 'off',
 				'vue/max-attributes-per-line': 'off',
 				'vue/singleline-html-element-content-newline': 'off',
