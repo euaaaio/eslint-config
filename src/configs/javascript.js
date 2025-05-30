@@ -82,7 +82,6 @@ export function javascript() {
 				'no-dupe-else-if': 'error',
 				'no-dupe-keys': 'error',
 				'no-duplicate-case': 'error',
-				'no-else-return': 'error',
 				'no-empty': 'error',
 				'no-empty-character-class': 'error',
 				'no-empty-function': 'error',
