@@ -2,7 +2,9 @@ import { defineConfig } from './src/index.js'
 
 export default defineConfig({
 	typescript: true,
-	vue: true,
+	vue: {
+		a11y: true,
+	},
 	stylistic: {
 		indent: 'tab',
 	},

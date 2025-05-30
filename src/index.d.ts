@@ -1,5 +1,5 @@
 import type { Linter } from 'eslint'
-import type { StylisticOptions } from './configs'
+import type { StylisticOptions, VueOptions } from './configs'
 import type { Config } from './types'
 
 interface DefineConfigOptions {
@@ -15,7 +15,7 @@ interface DefineConfigOptions {
 	 * @link https://eslint.vuejs.org/
 	 * @default false
 	 */
-	vue?: boolean
+	vue?: boolean | Omit<VueOptions, 'typescript'>
 
 	/**
 	 * @link https://eslint.style

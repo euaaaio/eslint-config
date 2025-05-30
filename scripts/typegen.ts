@@ -25,7 +25,9 @@ const configs = [
 	deMorgan(),
 	unicorn(),
 	typescript(),
-	vue(),
+	vue({
+		a11y: true,
+	}),
 	prettier(),
 	stylistic({}),
 	perfectionist(),

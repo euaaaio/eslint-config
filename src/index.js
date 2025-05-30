@@ -52,9 +52,11 @@ export function defineConfig(options, ...userConfigs) {
 	}
 
 	if (enableVue) {
+		const vueOptions = typeof options.vue === 'object' ? options.vue : {}
 		configs.push(
 			vue({
 				typescript: options.typescript,
+				...vueOptions,
 			}),
 		)
 	}
