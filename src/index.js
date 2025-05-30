@@ -8,6 +8,7 @@ import {
 	prettier,
 	promise,
 	stylistic,
+	test,
 	typescript,
 	unicorn,
 	vue,
@@ -17,6 +18,7 @@ export function defineConfig(options, ...userConfigs) {
 	const {
 		typescript: enableTypescript = false,
 		vue: enableVue = false,
+		test: enableTest = false,
 		stylistic: enableStylistic = false,
 		prettier: enablePrettier = false,
 		unicorn: enableUnicorn = true,
@@ -59,6 +61,10 @@ export function defineConfig(options, ...userConfigs) {
 				...vueOptions,
 			}),
 		)
+	}
+
+	if (enableTest) {
+		configs.push(test())
 	}
 
 	if (enablePrettier) {

@@ -18,6 +18,12 @@ interface DefineConfigOptions {
 	vue?: boolean | Omit<VueOptions, 'typescript'>
 
 	/**
+	 * @link https://github.com/vitest-dev/eslint-plugin-vitest
+	 * @default false
+	 */
+	test?: boolean
+
+	/**
 	 * @link https://eslint.style
 	 * @default false
 	 *

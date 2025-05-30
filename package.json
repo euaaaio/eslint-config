@@ -26,6 +26,7 @@
     "@stylistic/eslint-plugin": "^4.4.0",
     "@typescript-eslint/eslint-plugin": "^8.32.1",
     "@typescript-eslint/parser": "^8.32.1",
+    "@vitest/eslint-plugin": "^1.2.1",
     "eslint-config-flat-gitignore": "^2.1.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-de-morgan": "^1.2.1",
@@ -57,6 +58,7 @@
     "simple-git-hooks": "^2.13.0",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
+    "vitest": "^3.1.4",
     "vue": "^3.5.15"
   },
   "simple-git-hooks": {
