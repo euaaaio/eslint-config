@@ -1,31 +1,10 @@
-import type { StylisticCustomizeOptions } from '@stylistic/eslint-plugin'
-import type { Linter } from 'eslint'
-
-export function ignores(files?: string[]): Linter.Config[]
-
-export function javascript(): Linter.Config[]
-
-interface TypescriptOptions {
-	extraFileExtensions?: string[]
-}
-
-export function typescript(options: TypescriptOptions): Linter.Config[]
-
-interface VueOptions {
-	typescript?: boolean
-}
-
-export function vue(options: VueOptions): Linter.Config[]
-
-export type StylisticOptions = StylisticCustomizeOptions & {
-	overrides?: Linter.Config['rules']
-}
-
-export function imports(): Linter.Config[]
-export function promise(): Linter.Config[]
-export function unicorn(): Linter.Config[]
-
-export function prettier(): Linter.Config[]
-export function stylistic(options: StylisticOptions): Linter.Config[]
-
-export function perfectionist(): Linter.Config[]
+export { ignores } from './ignores.js'
+export { imports } from './imports.js'
+export { javascript } from './javascript.js'
+export { perfectionist } from './perfectionist.js'
+export { prettier } from './prettier.js'
+export { promise } from './promise.js'
+export { stylistic, type StylisticOptions } from './stylistic.js'
+export { typescript, type TypescriptOptions } from './typescript.js'
+export { unicorn } from './unicorn.js'
+export { vue, type VueOptions } from './vue.js'
