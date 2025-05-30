@@ -1,0 +1,45 @@
+import { flatConfigsToRulesDTS } from 'eslint-typegen/core'
+// import { builtinRules } from 'eslint/use-at-your-own-risk'
+import fs from 'node:fs/promises'
+import {
+	deMorgan,
+	ignores,
+	imports,
+	javascript,
+	node,
+	perfectionist,
+	prettier,
+	promise,
+	stylistic,
+	typescript,
+	unicorn,
+	vue,
+} from '../src/configs'
+
+const configs = [
+	ignores(),
+	javascript(),
+	imports(),
+	promise(),
+	node(),
+	deMorgan(),
+	unicorn(),
+	typescript(),
+	vue(),
+	prettier(),
+	stylistic({}),
+	perfectionist(),
+].flat()
+
+const configNames = configs.map(index => index.name).filter(Boolean) as string[]
+
+let dts = await flatConfigsToRulesDTS(configs, {
+	includeAugmentation: false,
+})
+
+dts += `
+// Names of all the configs
+export type ConfigNames = ${configNames.map(index => `'${index}'`).join(' | ')}
+`
+
+await fs.writeFile('src/typegen.d.ts', dts)

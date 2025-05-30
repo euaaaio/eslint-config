@@ -1,5 +1,6 @@
 import type { Linter } from 'eslint'
 import type { StylisticOptions } from './configs'
+import type { Config } from './types'
 
 interface DefineConfigOptions {
 	ignores?: string[]
@@ -47,5 +48,5 @@ interface DefineConfigOptions {
 
 export function defineConfig(
 	options: DefineConfigOptions,
-	...configs: Linter.Config[]
-): Linter.Config[]
+	...configs: Config[] | Linter.Config[]
+): Config[] | Linter.Config[]

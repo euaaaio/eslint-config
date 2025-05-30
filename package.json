@@ -17,7 +17,8 @@
   },
   "scripts": {
     "dev": "pnpx @eslint/config-inspector --config eslint.config.js",
-    "build": "pnpx @eslint/config-inspector build --outDir dist"
+    "build": "pnpx @eslint/config-inspector build --outDir dist",
+    "typegen": "tsx scripts/typegen.ts"
   },
   "dependencies": {
     "@eslint/js": "^9.27.0",
@@ -47,7 +48,10 @@
     }
   },
   "devDependencies": {
+    "@types/node": "^22.15.27",
     "eslint": "^9.27.0",
+    "eslint-typegen": "^2.2.0",
+    "tsx": "^4.19.4",
     "typescript": "^5.8.3",
     "vue": "^3.5.15"
   },
