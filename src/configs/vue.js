@@ -46,8 +46,8 @@ export function vue(options = {}) {
 				'vue/define-macros-order': ['error', {
 					order: [
 						'defineOptions',
-						'defineModel',
 						'defineProps',
+						'defineModel',
 						'defineEmits',
 						'defineSlots',
 					],
