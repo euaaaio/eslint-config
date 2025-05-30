@@ -34,7 +34,6 @@ export function javascript() {
 			rules: {
 				'accessor-pairs': 'error',
 				'array-callback-return': 'error',
-				'arrow-body-style': 'error',
 				'block-scoped-var': 'error',
 				'class-methods-use-this': 'error',
 				'complexity': 'error',
@@ -74,7 +73,6 @@ export function javascript() {
 				'no-constant-binary-expression': 'error',
 				'no-constant-condition': 'error',
 				'no-constructor-return': 'error',
-				'no-continue': 'error',
 				'no-control-regex': 'error',
 				'no-debugger': 'error',
 				'no-delete-var': 'error',
