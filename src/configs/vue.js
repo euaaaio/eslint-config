@@ -32,6 +32,13 @@ export function vue(options = {}) {
 				// Disabled TypeScript rules
 				'@typescript-eslint/prefer-function-type': 'off',
 
+				// Disabled
+				'vue/max-attributes-per-line': 'off',
+				'vue/no-v-html': 'off',
+				'vue/one-component-per-file': 'off',
+				'vue/singleline-html-element-content-newline': 'off',
+
+				// Additional
 				'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
 				'vue/define-props-declaration': ['error', 'type-based'],
 				'vue/define-macros-order': ['error', {
@@ -44,18 +51,15 @@ export function vue(options = {}) {
 					],
 					defineExposeLast: true,
 				}],
-				'vue/no-import-compiler-macros': ['error'],
+				'vue/no-import-compiler-macros': 'error',
 				'vue/no-undef-components': ['error', {
 					ignorePatterns: ['RouterLink'],
 				}],
-				'vue/no-unused-emit-declarations': ['error'],
-				'vue/no-unused-refs': ['error'],
-				'vue/no-useless-v-bind': ['error'],
-				'vue/no-use-v-else-with-v-for': ['error'],
-				'vue/no-v-html': 'off',
-				'vue/max-attributes-per-line': 'off',
-				'vue/singleline-html-element-content-newline': 'off',
-				'vue/one-component-per-file': 'off',
+				'vue/no-unused-emit-declarations': 'error',
+				'vue/no-unused-refs': 'error',
+				'vue/no-useless-v-bind': 'error',
+				'vue/no-use-v-else-with-v-for': 'error',
+				'vue/padding-line-between-blocks': ['error', 'always'],
 			},
 		},
 	])
