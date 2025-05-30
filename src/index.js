@@ -12,62 +12,68 @@ import {
 } from './configs/index.js'
 
 export function defineConfig(options, ...userConfigs) {
-	const config = []
+	const {
+		typescript: enableTypescript = false,
+		vue: enableVue = false,
+		stylistic: enableStylistic = false,
+		prettier: enablePrettier = false,
+		unicorn: enableUnicorn = true,
+		perfectionist: enablePerfectionist = false,
+	} = options
 
-	config.push(
+	const configs = []
+
+	configs.push(
 		ignores(options.ignores),
 		javascript(),
 		imports(),
 		promise(),
 	)
 
-	if (options.unicorn !== false) {
-		config.push(unicorn())
-	}
-
 	const extraFileExtensions = []
 	if (options.vue) {
 		extraFileExtensions.push('.vue')
 	}
 
-	if (options.typescript) {
-		config.push(
+	if (enableUnicorn) {
+		configs.push(unicorn())
+	}
+
+	if (enableTypescript) {
+		configs.push(
 			typescript({
 				extraFileExtensions,
 			}),
 		)
 	}
 
-	if (options.vue) {
-		config.push(
+	if (enableVue) {
+		configs.push(
 			vue({
 				typescript: options.typescript,
 			}),
 		)
 	}
 
-	if (options.prettier) {
-		config.push(prettier())
+	if (enablePrettier) {
+		configs.push(prettier())
 	}
 
-	if (!options.prettier) {
-		let stylisticOptions = {}
-		if (!options.stylistic) {
-			stylisticOptions = false
-		} else if (typeof options.stylistic === 'object') {
-			stylisticOptions = options.stylistic
+	if (!enablePrettier) {
+		let stylisticOptions = false
+		if (enableStylistic) {
+			stylisticOptions = typeof options.stylistic === 'object' ? options.stylistic : {}
 		}
-
-		if (stylisticOptions) {
-			config.push(stylistic(stylisticOptions))
+		if (stylisticOptions !== false) {
+			configs.push(stylistic(stylisticOptions))
 		}
 	}
 
-	if (options.perfectionist) {
-		config.push(perfectionist())
+	if (enablePerfectionist) {
+		configs.push(perfectionist())
 	}
 
-	config.push(...userConfigs)
+	configs.push(...userConfigs)
 
-	return config.flat()
+	return configs.flat()
 }
