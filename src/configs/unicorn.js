@@ -22,6 +22,7 @@ export function unicorn() {
 				// Improvements
 				'unicorn/prevent-abbreviations': ['error', {
 					replacements: {
+						arg: false,
 						args: false,
 						attrs: false,
 						el: false,
