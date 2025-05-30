@@ -10,6 +10,7 @@ interface DefineConfigOptions {
 	stylistic?: boolean | StylisticOptions
 	prettier?: boolean
 
+	unicorn?: boolean
 	perfectionist?: boolean
 }
 

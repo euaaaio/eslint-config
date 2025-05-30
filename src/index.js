@@ -19,8 +19,11 @@ export function defineConfig(options, ...userConfigs) {
 		javascript(),
 		imports(),
 		promise(),
-		unicorn(),
 	)
+
+	if (options.unicorn !== false) {
+		config.push(unicorn())
+	}
 
 	const extraFileExtensions = []
 	if (options.vue) {
