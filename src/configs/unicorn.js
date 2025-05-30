@@ -12,6 +12,7 @@ export function unicorn() {
 				...eslintPluginUnicorn.configs.recommended.rules,
 
 				// Disabled
+				'unicorn/consistent-function-scoping': 'off',
 				'unicorn/explicit-length-check': 'off',
 				'unicorn/prefer-global-this': 'off',
 				'unicorn/no-array-reduce': 'off',
