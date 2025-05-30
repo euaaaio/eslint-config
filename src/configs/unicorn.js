@@ -19,6 +19,7 @@ export function unicorn() {
 				'unicorn/no-null': 'off',
 				'unicorn/no-array-callback-reference': 'off',
 				'unicorn/no-object-as-default-parameter': 'off',
+				'unicorn/no-abusive-eslint-disable': 'off',
 
 				// Improvements
 				'unicorn/prevent-abbreviations': ['error', {
