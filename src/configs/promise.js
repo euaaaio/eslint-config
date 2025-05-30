@@ -8,7 +8,6 @@ export function promise() {
 			promise: eslintPluginPromise,
 		},
 		rules: {
-			'promise/always-return': 'error',
 			'promise/no-return-wrap': 'error',
 			'promise/param-names': 'error',
 			'promise/catch-or-return': 'error',
