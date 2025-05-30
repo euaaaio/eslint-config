@@ -1,9 +1,9 @@
-import stylisticEslintPlugin from '@stylistic/eslint-plugin'
+import pluginStylistic from '@stylistic/eslint-plugin'
 import { defineConfig } from 'eslint/config'
 
 export function stylistic(options) {
 	const { overrides, ...customizeOptions } = options
-	const config = stylisticEslintPlugin.configs.customize({
+	const config = pluginStylistic.configs.customize({
 		braceStyle: '1tbs',
 		...customizeOptions,
 	})
@@ -12,7 +12,7 @@ export function stylistic(options) {
 		{
 			name: 'euaaaio/stylistic',
 			plugins: {
-				'@stylistic': stylisticEslintPlugin,
+				'@stylistic': pluginStylistic,
 			},
 			rules: {
 				...config.rules,

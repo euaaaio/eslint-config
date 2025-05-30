@@ -1,4 +1,4 @@
-import eslintPluginUnicorn from 'eslint-plugin-unicorn'
+import pluginUnicorn from 'eslint-plugin-unicorn'
 import { defineConfig } from 'eslint/config'
 
 export function unicorn() {
@@ -6,10 +6,10 @@ export function unicorn() {
 		{
 			name: 'euaaaio/unicorn',
 			plugins: {
-				unicorn: eslintPluginUnicorn,
+				unicorn: pluginUnicorn,
 			},
 			rules: {
-				...eslintPluginUnicorn.configs.recommended.rules,
+				...pluginUnicorn.configs.recommended.rules,
 
 				// Disabled
 				'unicorn/consistent-function-scoping': 'off',

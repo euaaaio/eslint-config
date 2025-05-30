@@ -1,4 +1,4 @@
-import js from '@eslint/js'
+import pluginJs from '@eslint/js'
 import { defineConfig } from 'eslint/config'
 import globals from 'globals'
 
@@ -7,7 +7,7 @@ export function javascript() {
 		{
 			name: 'euaaaio/javascript',
 			plugins: {
-				js,
+				js: pluginJs,
 			},
 			languageOptions: {
 				ecmaVersion: 2022,

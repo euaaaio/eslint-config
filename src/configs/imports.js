@@ -1,11 +1,11 @@
-import eslintPluginImportX from 'eslint-plugin-import-x'
+import pluginImportX from 'eslint-plugin-import-x'
 import { defineConfig } from 'eslint/config'
 
 export function imports() {
 	return defineConfig([{
 		name: 'euaaaio/imports',
 		plugins: {
-			'import-x': eslintPluginImportX,
+			'import-x': pluginImportX,
 		},
 		rules: {
 			'import-x/consistent-type-specifier-style': ['error', 'prefer-top-level'],

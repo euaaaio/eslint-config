@@ -1,15 +1,15 @@
-import eslintPluginPrettier from 'eslint-plugin-prettier'
-import eslintPluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
+import pluginPrettier from 'eslint-plugin-prettier'
+import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
 import { defineConfig } from 'eslint/config'
 
 export function prettier() {
 	return defineConfig([{
 		name: 'euaaaio/prettier',
 		plugins: {
-			prettier: eslintPluginPrettier,
+			prettier: pluginPrettier,
 		},
 		rules: {
-			...eslintPluginPrettierRecommended.rules,
+			...pluginPrettierRecommended.rules,
 			'prettier/prettier': 'warn',
 		},
 	}])

@@ -1,4 +1,4 @@
-import eslintPluginNode from 'eslint-plugin-n'
+import pluginNode from 'eslint-plugin-n'
 import { defineConfig } from 'eslint/config'
 
 export function node() {
@@ -6,7 +6,7 @@ export function node() {
 		{
 			name: 'euaaaio/node',
 			plugins: {
-				n: eslintPluginNode,
+				n: pluginNode,
 			},
 			rules: {
 				'n/global-require': 'error',

@@ -1,5 +1,5 @@
-import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
-import typescriptEslintParser from '@typescript-eslint/parser'
+import pluginTypescript from '@typescript-eslint/eslint-plugin'
+import parserTypescript from '@typescript-eslint/parser'
 import { defineConfig } from 'eslint/config'
 import process from 'node:process'
 import { GLOB_TS } from '../globs.js'
@@ -17,7 +17,7 @@ export function typescript(options = {}) {
 			name: 'euaaaio/typescript',
 			files,
 			languageOptions: {
-				parser: typescriptEslintParser,
+				parser: parserTypescript,
 				parserOptions: {
 					sourceType: 'module',
 					tsconfigRootDir: process.cwd(),
@@ -26,7 +26,7 @@ export function typescript(options = {}) {
 				},
 			},
 			plugins: {
-				'@typescript-eslint': typescriptEslintPlugin,
+				'@typescript-eslint': pluginTypescript,
 			},
 			rules: {
 				...javascript().rules,
@@ -35,8 +35,8 @@ export function typescript(options = {}) {
 				'init-declarations': 'off',
 				'no-redeclare': 'off',
 
-				...typescriptEslintPlugin.configs['stylistic-type-checked'].rules,
-				...typescriptEslintPlugin.configs['strict-type-checked'].rules,
+				...pluginTypescript.configs['stylistic-type-checked'].rules,
+				...pluginTypescript.configs['strict-type-checked'].rules,
 
 				// Disabled
 				'@typescript-eslint/consistent-type-definitions': 'off',

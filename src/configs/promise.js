@@ -1,11 +1,11 @@
-import eslintPluginPromise from 'eslint-plugin-promise'
+import pluginPromise from 'eslint-plugin-promise'
 import { defineConfig } from 'eslint/config'
 
 export function promise() {
 	return defineConfig([{
 		name: 'euaaaio/promise',
 		plugins: {
-			promise: eslintPluginPromise,
+			promise: pluginPromise,
 		},
 		rules: {
 			'promise/no-return-wrap': 'error',

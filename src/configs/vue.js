@@ -1,18 +1,18 @@
-import typescriptEslintParser from '@typescript-eslint/parser'
-import eslintPluginVue from 'eslint-plugin-vue'
+import parserTypescript from '@typescript-eslint/parser'
+import pluginVue from 'eslint-plugin-vue'
 import { defineConfig } from 'eslint/config'
-import vueEslintParser from 'vue-eslint-parser'
+import parserVue from 'vue-eslint-parser'
 import { GLOB_VUE } from '../globs.js'
 
 export function vue(options = {}) {
 	const languageOptionsWithTS = {
-		parser: vueEslintParser,
+		parser: parserVue,
 		parserOptions: {
 			ecmaFeatures: {
 				jsx: true,
 			},
 			extraFileExtensions: ['.vue'],
-			parser: typescriptEslintParser,
+			parser: parserTypescript,
 			sourceType: 'module',
 		},
 	}
@@ -22,12 +22,12 @@ export function vue(options = {}) {
 			name: 'euaaaio/vue',
 			files: [GLOB_VUE],
 			plugins: {
-				vue: eslintPluginVue,
+				vue: pluginVue,
 			},
-			processor: eslintPluginVue.processors.vue,
+			processor: pluginVue.processors.vue,
 			languageOptions: options.typescript ? languageOptionsWithTS : null,
 			rules: {
-				...eslintPluginVue.configs['flat/recommended'].rules,
+				...pluginVue.configs['flat/recommended'].rules,
 
 				// Disabled TypeScript rules
 				'@typescript-eslint/prefer-function-type': 'off',
