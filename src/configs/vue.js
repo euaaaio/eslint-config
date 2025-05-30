@@ -44,6 +44,7 @@ export function vue(options = {}) {
 					],
 					defineExposeLast: true,
 				}],
+				'vue/no-import-compiler-macros': ['error'],
 				'vue/no-v-html': 'off',
 				'vue/max-attributes-per-line': 'off',
 				'vue/singleline-html-element-content-newline': 'off',
