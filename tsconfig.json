@@ -8,11 +8,6 @@
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "moduleResolution": "bundler",
-  },
-  "include": [
-    "**/*.js",
-    "**/*.ts",
-    "**/*.d.ts"
-  ]
+    "moduleResolution": "bundler"
+  }
 }
