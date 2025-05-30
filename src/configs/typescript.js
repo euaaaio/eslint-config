@@ -2,12 +2,13 @@ import typescriptEslintPlugin from '@typescript-eslint/eslint-plugin'
 import typescriptEslintParser from '@typescript-eslint/parser'
 import { defineConfig } from 'eslint/config'
 import process from 'node:process'
+import { GLOB_TS } from '../globs.js'
 import { javascript } from './javascript.js'
 
 export function typescript(options = {}) {
 	const { extraFileExtensions = [] } = options
 	const files = [
-		'**/*.ts',
+		GLOB_TS,
 		...extraFileExtensions.map(ext => `**/*${ext}`),
 	]
 

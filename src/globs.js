@@ -1,3 +1,7 @@
+export const GLOB_TS = '**/*.ts'
+
+export const GLOB_VUE = '**/*.vue'
+
 export const GLOB_EXCLUDE = [
 	// Defaults
 	'**/node_modules',

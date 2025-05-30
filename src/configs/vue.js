@@ -2,6 +2,7 @@ import typescriptEslintParser from '@typescript-eslint/parser'
 import eslintPluginVue from 'eslint-plugin-vue'
 import { defineConfig } from 'eslint/config'
 import vueEslintParser from 'vue-eslint-parser'
+import { GLOB_VUE } from '../globs.js'
 
 export function vue(options = {}) {
 	const languageOptionsWithTS = {
@@ -19,7 +20,7 @@ export function vue(options = {}) {
 	return defineConfig([
 		{
 			name: 'euaaaio/vue',
-			files: ['**/*.vue'],
+			files: [GLOB_VUE],
 			plugins: {
 				vue: eslintPluginVue,
 			},
