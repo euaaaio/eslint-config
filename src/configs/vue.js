@@ -45,6 +45,9 @@ export function vue(options = {}) {
 					defineExposeLast: true,
 				}],
 				'vue/no-import-compiler-macros': ['error'],
+				'vue/no-undef-components': ['error', {
+					ignorePatterns: ['RouterLink'],
+				}],
 				'vue/no-v-html': 'off',
 				'vue/max-attributes-per-line': 'off',
 				'vue/singleline-html-element-content-newline': 'off',
