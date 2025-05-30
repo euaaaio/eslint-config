@@ -32,6 +32,7 @@ export function vue(options = {}) {
 				// Disabled TypeScript rules
 				'@typescript-eslint/prefer-function-type': 'off',
 
+				'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
 				'vue/no-v-html': 'off',
 				'vue/max-attributes-per-line': 'off',
 				'vue/singleline-html-element-content-newline': 'off',
