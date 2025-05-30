@@ -1,6 +1,7 @@
 export * from './ignores.js'
 export * from './imports.js'
 export * from './javascript.js'
+export * from './node.js'
 export * from './perfectionist.js'
 export * from './prettier.js'
 export * from './promise.js'

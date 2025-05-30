@@ -2,6 +2,7 @@ import {
 	ignores,
 	imports,
 	javascript,
+	node,
 	perfectionist,
 	prettier,
 	promise,
@@ -28,6 +29,7 @@ export function defineConfig(options, ...userConfigs) {
 		javascript(),
 		imports(),
 		promise(),
+		node(),
 	)
 
 	const extraFileExtensions = []
