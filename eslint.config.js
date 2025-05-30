@@ -5,6 +5,7 @@ export default defineConfig({
 	vue: {
 		a11y: true,
 	},
+	test: true,
 	stylistic: {
 		indent: 'tab',
 	},

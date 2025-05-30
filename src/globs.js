@@ -1,6 +1,15 @@
-export const GLOB_TS = '**/*.ts'
+export const GLOB_SRC_EXT = '{js,ts}'
 
+export const GLOB_TS = '**/*.ts'
 export const GLOB_VUE = '**/*.vue'
+
+export const GLOB_STORYBOOK = '**/*.stories.{js,ts}'
+
+export const GLOB_TESTS = [
+	`**/__tests__/**/*.${GLOB_SRC_EXT}`,
+	`**/*.spec.${GLOB_SRC_EXT}`,
+	`**/*.test.${GLOB_SRC_EXT}`,
+]
 
 export const GLOB_EXCLUDE = [
 	// Defaults

@@ -10,6 +10,7 @@ import {
 	prettier,
 	promise,
 	stylistic,
+	test,
 	typescript,
 	unicorn,
 	vue,
@@ -27,6 +28,7 @@ const configs = [
 	vue({
 		a11y: true,
 	}),
+	test(),
 	prettier(),
 	stylistic({}),
 	perfectionist(),
