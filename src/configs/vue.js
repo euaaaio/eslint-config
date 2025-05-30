@@ -50,6 +50,7 @@ export function vue(options = {}) {
 				}],
 				'vue/no-unused-emit-declarations': ['error'],
 				'vue/no-unused-refs': ['error'],
+				'vue/no-use-v-else-with-v-for': ['error'],
 				'vue/no-v-html': 'off',
 				'vue/max-attributes-per-line': 'off',
 				'vue/singleline-html-element-content-newline': 'off',
