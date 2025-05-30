@@ -42,6 +42,7 @@ export function typescript(options = {}) {
 				'@typescript-eslint/restrict-template-expressions': 'off',
 				'@typescript-eslint/prefer-nullish-coalescing': 'off',
 				'@typescript-eslint/no-empty-function': 'off',
+'@typescript-eslint/no-unsafe-argument': 'off',
 
 				// Improvements
 				'@typescript-eslint/array-type': ['error', {
