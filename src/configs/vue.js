@@ -33,6 +33,7 @@ export function vue(options = {}) {
 				'@typescript-eslint/prefer-function-type': 'off',
 
 				'vue/block-order': ['error', { order: ['script', 'template', 'style'] }],
+				'vue/define-props-declaration': ['error', 'type-based'],
 				'vue/define-macros-order': ['error', {
 					order: [
 						'defineOptions',
