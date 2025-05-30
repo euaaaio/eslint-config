@@ -27,7 +27,6 @@ export function node() {
 				],
 				'n/no-unsupported-features/node-builtins': 'error',
 				'n/prefer-global/buffer': ['error', 'never'],
-				'n/prefer-global/process': ['error', 'never'],
 				'n/prefer-node-protocol': 'error',
 				'n/process-exit-as-throw': 'error',
 			},
