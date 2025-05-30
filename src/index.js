@@ -1,4 +1,5 @@
 import {
+	deMorgan,
 	ignores,
 	imports,
 	javascript,
@@ -30,6 +31,7 @@ export function defineConfig(options, ...userConfigs) {
 		imports(),
 		promise(),
 		node(),
+		deMorgan(),
 	)
 
 	const extraFileExtensions = []
