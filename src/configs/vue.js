@@ -61,6 +61,7 @@ export function vue(options = {}) {
 				'vue/no-use-v-else-with-v-for': 'error',
 				'vue/padding-line-between-blocks': ['error', 'always'],
 				'vue/prefer-define-options': 'error',
+				'vue/prefer-use-template-ref': 'error',
 			},
 		},
 	])
