@@ -49,6 +49,7 @@ export function vue(options = {}) {
 					ignorePatterns: ['RouterLink'],
 				}],
 				'vue/no-unused-emit-declarations': ['error'],
+				'vue/no-unused-refs': ['error'],
 				'vue/no-v-html': 'off',
 				'vue/max-attributes-per-line': 'off',
 				'vue/singleline-html-element-content-newline': 'off',
