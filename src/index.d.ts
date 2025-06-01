@@ -1,5 +1,5 @@
 import type { Linter } from 'eslint'
-import type { StylisticOptions, VueOptions } from './configs'
+import type { OxlintOptions, StylisticOptions, VueOptions } from './configs'
 import type { Config } from './types'
 
 interface DefineConfigOptions {
@@ -50,6 +50,12 @@ interface DefineConfigOptions {
 	 * @default false
 	 */
 	perfectionist?: boolean
+
+	/**
+	 * @link https://github.com/oxc-project/eslint-plugin-oxlint
+	 * @default false
+	 */
+	oxlint?: boolean | OxlintOptions
 }
 
 export function defineConfig(

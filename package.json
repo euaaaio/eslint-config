@@ -9,9 +9,10 @@
   "type": "module",
   "scripts": {
     "dev": "pnpx @eslint/config-inspector --config eslint.config.js",
-    "test:lint": "eslint .",
+    "test:lint": "oxlint . && eslint .",
     "build": "pnpx @eslint/config-inspector build --outDir dist",
-    "typegen": "tsx scripts/typegen.ts"
+    "typegen": "tsx scripts/typegen.ts",
+    "oxgen": "tsx scripts/oxgen.ts"
   },
   "packageManager": "pnpm@10.10.0",
   "engines": {
@@ -32,6 +33,7 @@
     "eslint-plugin-de-morgan": "^1.2.1",
     "eslint-plugin-import-x": "^4.13.3",
     "eslint-plugin-n": "^17.18.0",
+    "eslint-plugin-oxlint": "^0.17.0",
     "eslint-plugin-perfectionist": "^4.13.0",
     "eslint-plugin-prettier": "^5.4.0",
     "eslint-plugin-promise": "^7.2.1",
@@ -55,6 +57,7 @@
     "eslint": "^9.27.0",
     "eslint-typegen": "^2.2.0",
     "nano-staged": "^0.8.0",
+    "oxlint": "^0.17.0",
     "simple-git-hooks": "^2.13.0",
     "tsx": "^4.19.4",
     "typescript": "^5.8.3",
@@ -62,7 +65,7 @@
     "vue": "^3.5.15"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm typegen && git add src/typegen.d.ts && ./node_modules/.bin/nano-staged"
+    "pre-commit": "pnpm oxgen && git add docs/oxlint/UNSUPPORTED-RULES.md && git add .oxlintrc.json && pnpm typegen && git add src/typegen.d.ts && ./node_modules/.bin/nano-staged"
   },
   "nano-staged": {
     "*.{js,ts}": "eslint ."

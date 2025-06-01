@@ -10,4 +10,5 @@ export default defineConfig({
 		indent: 'tab',
 	},
 	perfectionist: true,
+	oxlint: true,
 })

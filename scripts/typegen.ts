@@ -6,6 +6,7 @@ import {
 	imports,
 	javascript,
 	node,
+	oxlint,
 	perfectionist,
 	prettier,
 	promise,
@@ -32,6 +33,7 @@ const configs = [
 	prettier(),
 	stylistic({}),
 	perfectionist(),
+	oxlint(),
 ].flat()
 
 const configNames = configs.map(index => index.name).filter(Boolean) as string[]

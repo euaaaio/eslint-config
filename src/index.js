@@ -4,6 +4,7 @@ import {
 	imports,
 	javascript,
 	node,
+	oxlint,
 	perfectionist,
 	prettier,
 	promise,
@@ -23,6 +24,7 @@ export function defineConfig(options, ...userConfigs) {
 		prettier: enablePrettier = false,
 		unicorn: enableUnicorn = true,
 		perfectionist: enablePerfectionist = false,
+		oxlint: enableOxlint = false,
 	} = options
 
 	const configs = []
@@ -86,6 +88,11 @@ export function defineConfig(options, ...userConfigs) {
 	}
 
 	configs.push(...userConfigs)
+
+	if (enableOxlint) {
+		const oxlintOptions = typeof options.oxlint === 'object' ? options.oxlint : {}
+		configs.push(oxlint(oxlintOptions))
+	}
 
 	return configs.flat()
 }
