@@ -72,7 +72,7 @@ export function unicorn() {
 
 		{
 			name: 'euaaaio/unicorn/testing',
-			files: [GLOB_TESTS],
+			files: GLOB_TESTS,
 			rules: {
 				'unicorn/filename-case': ['error', {
 					case: 'pascalCase',
