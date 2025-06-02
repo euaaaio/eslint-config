@@ -1,7 +1,5 @@
 # Oxlint Unsupported Rules
 
-Generated on: 2025-06-02T17:15:58.784Z
-
 - `accessor-pairs`
 - `class-methods-use-this`
 - `consistent-this`

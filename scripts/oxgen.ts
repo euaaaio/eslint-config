@@ -50,8 +50,6 @@ async function generateRules(): Promise<void> {
 
 		const markdown = `# Oxlint Unsupported Rules
 
-Generated on: ${new Date().toISOString()}
-
 ${rules.join('\n')}
 `
 
