@@ -1,6 +1,6 @@
 # Oxlint Unsupported Rules
 
-Generated on: 2025-06-01T21:48:40.481Z
+Generated on: 2025-06-02T14:11:31.631Z
 
 - `accessor-pairs`
 - `class-methods-use-this`
