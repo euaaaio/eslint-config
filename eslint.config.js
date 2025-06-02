@@ -13,7 +13,9 @@ export const config = {
 		indent: 'tab',
 	},
 	perfectionist: true,
-	oxlint: true,
+	oxlint: {
+		dts: true,
+	},
 }
 
 export default defineConfig(config)

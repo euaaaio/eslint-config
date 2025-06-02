@@ -55,7 +55,14 @@ interface DefineConfigOptions {
 	 * @link https://github.com/oxc-project/eslint-plugin-oxlint
 	 * @default false
 	 */
-	oxlint?: boolean | OxlintOptions
+	oxlint?: boolean | Omit<OxlintOptions, 'typescriptOptions'> & {
+		/**
+		 * @default false
+		 *
+		 * When enabled, the typescript configs will be added after the oxlint configs to ensure the dts files are checked.
+		 */
+		dts?: boolean
+	}
 }
 
 export function defineConfig(

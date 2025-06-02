@@ -91,7 +91,16 @@ export function defineConfig(options, ...userConfigs) {
 
 	if (enableOxlint) {
 		const oxlintOptions = typeof options.oxlint === 'object' ? options.oxlint : {}
-		configs.push(oxlint(oxlintOptions))
+		configs.push(
+			oxlint({
+				...oxlintOptions,
+				typescriptOptions: enableTypescript && oxlintOptions.dts
+					? {
+							extraFileExtensions,
+						}
+					: undefined,
+			}),
+		)
 	}
 
 	return configs.flat()
