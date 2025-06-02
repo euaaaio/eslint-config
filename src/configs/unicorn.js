@@ -1,6 +1,6 @@
 import pluginUnicorn from 'eslint-plugin-unicorn'
 import { defineConfig } from 'eslint/config'
-import { GLOB_STORYBOOK, GLOB_TESTS, GLOB_VUE } from '../globs.js'
+import { GLOB_ASTRO, GLOB_STORYBOOK, GLOB_TESTS, GLOB_VUE } from '../globs.js'
 
 export function unicorn() {
 	return defineConfig([
@@ -54,6 +54,16 @@ export function unicorn() {
 		{
 			name: 'euaaaio/unicorn/vue',
 			files: [GLOB_VUE],
+			rules: {
+				'unicorn/filename-case': ['error', {
+					case: 'pascalCase',
+				}],
+			},
+		},
+
+		{
+			name: 'euaaaio/unicorn/astro',
+			files: [GLOB_ASTRO],
 			rules: {
 				'unicorn/filename-case': ['error', {
 					case: 'pascalCase',
