@@ -9,10 +9,12 @@
   "type": "module",
   "scripts": {
     "dev": "pnpx @eslint/config-inspector --config eslint.config.js",
-    "test:lint": "oxlint . && eslint .",
-    "build": "pnpx @eslint/config-inspector build --outDir dist",
-    "typegen": "tsx scripts/typegen.ts",
-    "oxgen": "tsx scripts/oxgen.ts"
+    "test:oxlint": "oxlint",
+    "test:eslint": "eslint .",
+    "test": "pnpm run /^test:/",
+    "build:inspector": "pnpx @eslint/config-inspector build --outDir dist",
+    "build:types": "tsx scripts/typegen.ts",
+    "build:oxlint": "tsx scripts/oxgen.ts"
   },
   "exports": {
     ".": "./src/index.js",
@@ -74,9 +76,9 @@
     ]
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm oxgen && git add docs/oxlint/UNSUPPORTED-RULES.md && git add .oxlintrc.json && pnpm typegen && git add src/typegen.d.ts && ./node_modules/.bin/nano-staged"
+    "pre-commit": "pnpm build:oxlint && git add docs/oxlint/UNSUPPORTED-RULES.md && git add .oxlintrc.json && pnpm build:types && git add src/typegen.d.ts && ./node_modules/.bin/nano-staged"
   },
   "nano-staged": {
-    "*.{js,ts}": "eslint ."
+    "*.{js,ts}": "oxlint && eslint ."
   }
 }
