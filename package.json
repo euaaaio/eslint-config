@@ -20,7 +20,7 @@
     ".": "./src/index.js",
     "./package.json": "./package.json"
   },
-  "packageManager": "pnpm@10.10.0",
+  "packageManager": "pnpm@10.11.1",
   "engines": {
     "node": "^20.0.0 || >=22.0.0"
   },
