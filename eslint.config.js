@@ -1,6 +1,9 @@
 import { defineConfig } from './src/index.js'
 
-export default defineConfig({
+/**
+ * @type {import('./src/index.js').defineConfig}
+ */
+export const config = {
 	typescript: true,
 	vue: {
 		a11y: true,
@@ -11,4 +14,6 @@ export default defineConfig({
 	},
 	perfectionist: true,
 	oxlint: true,
-})
+}
+
+export default defineConfig(config)
