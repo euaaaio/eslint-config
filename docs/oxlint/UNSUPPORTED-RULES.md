@@ -34,6 +34,7 @@
 - `no-warning-comments`
 - `object-shorthand`
 - `prefer-arrow-callback`
+- `prefer-const`
 - `prefer-regex-literals`
 - `strict`
 - `import-x/export` *(in development)*

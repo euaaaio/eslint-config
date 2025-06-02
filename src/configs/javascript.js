@@ -174,6 +174,10 @@ export function javascript() {
 				'object-shorthand': 'error',
 				'operator-assignment': 'error',
 				'prefer-arrow-callback': 'error',
+				'prefer-const': ['error', {
+					destructuring: 'all',
+					ignoreReadBeforeAssign: true,
+				}],
 				'prefer-exponentiation-operator': 'error',
 				'prefer-numeric-literals': 'error',
 				'prefer-object-spread': 'error',
