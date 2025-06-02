@@ -1,6 +1,7 @@
 export const GLOB_SRC_EXT = '{js,ts}'
 
 export const GLOB_TS = '**/*.ts'
+export const GLOB_DTS = '**/*.d.ts'
 export const GLOB_VUE = '**/*.vue'
 
 export const GLOB_STORYBOOK = '**/*.stories.{js,ts}'
