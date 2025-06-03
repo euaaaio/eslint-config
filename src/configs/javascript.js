@@ -102,7 +102,6 @@ export function javascript() {
 				'no-inner-declarations': 'error',
 				'no-invalid-regexp': 'error',
 				'no-invalid-this': 'error',
-				'no-irregular-whitespace': 'error',
 				'no-iterator': 'error',
 				'no-label-var': 'error',
 				'no-labels': 'error',

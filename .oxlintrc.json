@@ -106,7 +106,6 @@
     "no-import-assign": "error",
     "no-inner-declarations": "error",
     "no-invalid-regexp": "error",
-    "no-irregular-whitespace": "error",
     "no-iterator": "error",
     "no-label-var": "error",
     "no-labels": "error",
