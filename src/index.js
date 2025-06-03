@@ -1,4 +1,5 @@
 import {
+	astro,
 	deMorgan,
 	ignores,
 	imports,
@@ -19,6 +20,7 @@ export function defineConfig(options, ...userConfigs) {
 	const {
 		typescript: enableTypescript = false,
 		vue: enableVue = false,
+		astro: enableAstro = false,
 		test: enableTest = false,
 		stylistic: enableStylistic = false,
 		prettier: enablePrettier = false,
@@ -42,6 +44,9 @@ export function defineConfig(options, ...userConfigs) {
 	if (options.vue) {
 		extraFileExtensions.push('.vue')
 	}
+	if (enableAstro) {
+		extraFileExtensions.push('.astro')
+	}
 
 	if (enableUnicorn) {
 		configs.push(unicorn())
@@ -55,6 +60,24 @@ export function defineConfig(options, ...userConfigs) {
 		)
 	}
 
+	if (enablePrettier) {
+		configs.push(prettier())
+	}
+
+	if (!enablePrettier) {
+		let stylisticOptions = false
+		if (enableStylistic !== false) {
+			stylisticOptions = typeof options.stylistic === 'object' ? options.stylistic : {}
+		}
+		if (stylisticOptions !== false) {
+			configs.push(stylistic(stylisticOptions))
+		}
+	}
+
+	if (enablePerfectionist) {
+		configs.push(perfectionist())
+	}
+
 	if (enableVue) {
 		const vueOptions = typeof options.vue === 'object' ? options.vue : {}
 		configs.push(
@@ -65,26 +88,17 @@ export function defineConfig(options, ...userConfigs) {
 		)
 	}
 
+	if (enableAstro) {
+		configs.push(
+			astro({
+				typescript: enableTypescript,
+				stylistic: enableStylistic !== false,
+			}),
+		)
+	}
+
 	if (enableTest) {
 		configs.push(test())
-	}
-
-	if (enablePrettier) {
-		configs.push(prettier())
-	}
-
-	if (!enablePrettier) {
-		let stylisticOptions = false
-		if (enableStylistic) {
-			stylisticOptions = typeof options.stylistic === 'object' ? options.stylistic : {}
-		}
-		if (stylisticOptions !== false) {
-			configs.push(stylistic(stylisticOptions))
-		}
-	}
-
-	if (enablePerfectionist) {
-		configs.push(perfectionist())
 	}
 
 	configs.push(...userConfigs)

@@ -317,6 +317,19 @@
     },
     {
       "files": [
+        "**/*.astro"
+      ],
+      "rules": {
+        "unicorn/filename-case": [
+          "error",
+          {
+            "case": "pascalCase"
+          }
+        ]
+      }
+    },
+    {
+      "files": [
         "**/*.stories.{js,ts}"
       ],
       "rules": {

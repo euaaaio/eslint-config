@@ -1,6 +1,7 @@
 import { flatConfigsToRulesDTS } from 'eslint-typegen/core'
 import fs from 'node:fs/promises'
 import {
+	astro,
 	deMorgan,
 	ignores,
 	imports,
@@ -29,6 +30,7 @@ const configs = [
 	vue({
 		a11y: true,
 	}),
+	astro(),
 	test(),
 	prettier(),
 	stylistic({}),

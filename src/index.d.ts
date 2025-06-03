@@ -18,6 +18,12 @@ interface DefineConfigOptions {
 	vue?: boolean | Omit<VueOptions, 'typescript'>
 
 	/**
+	 * @link https://ota-meshi.github.io/eslint-plugin-astro/
+	 * @default false
+	 */
+	astro?: boolean
+
+	/**
 	 * @link https://github.com/vitest-dev/eslint-plugin-vitest
 	 * @default false
 	 */
