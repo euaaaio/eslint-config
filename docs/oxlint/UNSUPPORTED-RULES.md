@@ -222,3 +222,11 @@
 - `vue-a11y/no-static-element-interactions`
 - `vue-a11y/role-has-required-aria-props`
 - `vue-a11y/tabindex-no-positive`
+- `astro/missing-client-only-directive-value`
+- `astro/no-conflict-set-directives`
+- `astro/no-deprecated-astro-canonicalurl`
+- `astro/no-deprecated-astro-fetchcontent`
+- `astro/no-deprecated-astro-resolve`
+- `astro/no-deprecated-getentrybyslug`
+- `astro/no-unused-define-vars-in-style`
+- `astro/valid-compile`
