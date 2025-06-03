@@ -8,6 +8,7 @@ export const config = {
 	vue: {
 		a11y: true,
 	},
+	astro: true,
 	test: true,
 	stylistic: {
 		indent: 'tab',

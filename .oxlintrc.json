@@ -359,7 +359,8 @@
     {
       "files": [
         "**/*.ts",
-        "**/*.vue"
+        "**/*.vue",
+        "**/*.astro"
       ],
       "rules": {
         "init-declarations": "off",
@@ -425,6 +426,15 @@
       "plugins": [
         "typescript"
       ]
+    },
+    {
+      "files": [
+        "**/*.astro"
+      ],
+      "globals": {
+        "Astro": "readonly",
+        "Fragment": "readonly"
+      }
     }
   ]
 }
