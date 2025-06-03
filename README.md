@@ -2,15 +2,15 @@
 
 Opinionated and flexible ESLint shareable config with first-class TypeScript support, built as a pure JavaScript configuration with `.d.ts` files for enhanced developer experience.
 
-**Default plugins:** [`@eslint/js`](https://eslint.org/docs/latest/rules/), [`@typescript-eslint`](https://typescript-eslint.io/), [`import-x`](https://github.com/un-es/eslint-plugin-import-x), [`promise`](https://github.com/eslint-community/eslint-plugin-promise), [`n`](https://github.com/eslint-community/eslint-plugin-n), [`de-morgan`](https://github.com/jonathanharrell/eslint-plugin-de-morgan), [`unicorn`](https://github.com/sindresorhus/eslint-plugin-unicorn)
+**Default plugins:** [`@eslint/js`][eslint-js], [`@typescript-eslint`][typescript-eslint], [`import-x`][import-x], [`promise`][promise], [`n`][node], [`de-morgan`][de-morgan], [`unicorn`][unicorn]
 
-**Optional plugins:** [`vue`](https://eslint.vuejs.org/), [`astro`](https://ota-meshi.github.io/eslint-plugin-astro/), [`vitest`](https://github.com/vitest-dev/eslint-plugin-vitest), [`prettier`](https://github.com/prettier/eslint-plugin-prettier), [`@stylistic`](https://eslint.style/), [`perfectionist`](https://perfectionist.dev/), [`vuejs-accessibility`](https://vue-a11y.github.io/eslint-plugin-vuejs-accessibility/)
+**Optional plugins:** [`vue`][vue], [`astro`][astro], [`vitest`][vitest], [`prettier`][prettier], [`@stylistic`][stylistic], [`perfectionist`][perfectionist], [`vuejs-accessibility`][vue-a11y]
 
-This config uses modern [ESLint flat config](https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file) format and can be installed directly from the repository using `pnpm i github:euaaaio/eslint-config`, thanks to our pure JavaScript implementation with TypeScript definitions provided via `.d.ts` files.
+This config uses modern [ESLint flat config][flat-config] format and can be installed directly from the repository using `pnpm i github:euaaaio/eslint-config`, thanks to our pure JavaScript implementation with TypeScript definitions provided via `.d.ts` files.
 
-✨ **First-class TypeScript support** with automatic type generation using [`eslint-typegen`](https://github.com/antfu/eslint-typegen) for the best possible developer experience.
+✨ **First-class TypeScript support** with automatic type generation using [`eslint-typegen`][eslint-typegen] for the best possible developer experience.
 
-🔍 **[Inspect rules](https://eslint-config.euaaaio.ru/)**
+🔍 **[Inspect rules][inspector]**
 
 
 ## Table of Contents
@@ -123,7 +123,7 @@ You can choose between Prettier and ESLint Stylistic for code formatting:
 
 #### Stylistic Options
 
-When using `stylistic: true`, you can customize formatting rules. See [StylisticOptions](https://github.com/eslint-stylistic/eslint-stylistic/blob/main/packages/eslint-plugin/dts/options.d.ts) for all available options:
+When using `stylistic: true`, you can customize formatting rules. See [StylisticOptions][stylistic-options] for all available options:
 
 ```javascript
 export default defineConfig({
@@ -149,7 +149,7 @@ Enable Vue.js support with additional options:
 ```javascript
 export default defineConfig({
   vue: {
-    accessibility: true, // Enable vue-a11y rules
+    a11y: true, // Enable vue-a11y rules
   }
 })
 ```
@@ -189,7 +189,7 @@ export default defineConfig(
 
 ### Astro
 
-Full support for [Astro](https://astro.build/) projects with TypeScript integration:
+Full support for [Astro][astro-site] projects with TypeScript integration:
 
 ```javascript
 export default defineConfig({
@@ -203,9 +203,9 @@ This enables linting for `.astro` files with proper TypeScript support and Astro
 
 ## Oxlint Support
 
-This config includes built-in support for [oxlint](https://oxc.rs/docs/guide/usage/linter.html) - a blazing-fast JavaScript linter written in Rust by [VoidZero](https://voidzero.dev/). Oxlint is **50-100 times faster** than ESLint and designed for performance-critical workflows, making it perfect for large codebases and CI environments.
+This config includes built-in support for [oxlint][oxlint] - a blazing-fast JavaScript linter written in Rust by [void(0)][voidzero]. Oxlint is **50-100 times faster** than ESLint and designed for performance-critical workflows, making it perfect for large codebases and CI environments.
 
-> **Note:** Oxlint doesn't support all ESLint rules yet. Check the [generated list of unsupported rules](./docs/oxlint/UNSUPPORTED-RULES.md) to see which rules from this config are not available in oxlint.
+> **Note:** Oxlint doesn't support all ESLint rules yet. Check the [generated list of unsupported rules][unsupported-rules] to see which rules from this config are not available in oxlint.
 
 
 ### Enabling Oxlint
@@ -265,13 +265,42 @@ Or add it as a script to your `package.json`:
 
 This configuration is inspired by and builds upon the excellent work of:
 
-- [@antfu/eslint-config](https://github.com/antfu/eslint-config) - The pioneer of flat config adoption
-- [@sxzz/eslint-config](https://github.com/sxzz/eslint-config) - Opinionated and practical approach
-- [@logux/eslint-config](https://github.com/logux/eslint-config) - Solid foundation and structure
+- [@logux/eslint-config][logux-config]
+- [@sxzz/eslint-config][sxzz-config]
+- [@antfu/eslint-config][antfu-config]
 
 
 ## Contributing (TODO)
 
 This package can be installed directly from the repository using `pnpm add -D github:euaaaio/eslint-config`, thanks to our pure JavaScript implementation with TypeScript definitions provided via `.d.ts` files - no compilation step required.
 
-All versions follow [Semantic Versioning](https://semver.org/).
+All versions follow [Semantic Versioning][semver].
+
+
+<!-- Link definitions -->
+[eslint-js]: https://eslint.org/docs/latest/rules/
+[typescript-eslint]: https://typescript-eslint.io/
+[import-x]: https://github.com/un-es/eslint-plugin-import-x
+[promise]: https://github.com/eslint-community/eslint-plugin-promise
+[node]: https://github.com/eslint-community/eslint-plugin-n
+[de-morgan]: https://github.com/jonathanharrell/eslint-plugin-de-morgan
+[unicorn]: https://github.com/sindresorhus/eslint-plugin-unicorn
+[vue]: https://eslint.vuejs.org/
+[astro]: https://ota-meshi.github.io/eslint-plugin-astro/
+[vitest]: https://github.com/vitest-dev/eslint-plugin-vitest
+[prettier]: https://github.com/prettier/eslint-plugin-prettier
+[stylistic]: https://eslint.style/
+[perfectionist]: https://perfectionist.dev/
+[vue-a11y]: https://vue-a11y.github.io/eslint-plugin-vuejs-accessibility/
+[flat-config]: https://eslint.org/docs/latest/use/configure/configuration-files#configuration-file
+[eslint-typegen]: https://github.com/antfu/eslint-typegen
+[inspector]: https://eslint-config.euaaaio.ru/
+[stylistic-options]: https://github.com/eslint-stylistic/eslint-stylistic/blob/main/packages/eslint-plugin/dts/options.d.ts
+[astro-site]: https://astro.build/
+[oxlint]: https://oxc.rs/docs/guide/usage/linter.html
+[voidzero]: https://voidzero.dev/
+[unsupported-rules]: ./docs/oxlint/UNSUPPORTED-RULES.md
+[antfu-config]: https://github.com/antfu/eslint-config
+[sxzz-config]: https://github.com/sxzz/eslint-config
+[logux-config]: https://github.com/logux/eslint-config
+[semver]: https://semver.org/
