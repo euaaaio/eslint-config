@@ -27,6 +27,7 @@ export function defineConfig(options, ...userConfigs) {
 		unicorn: enableUnicorn = true,
 		perfectionist: enablePerfectionist = false,
 		oxlint: enableOxlint = false,
+		strict = true,
 	} = options
 
 	const configs = []
@@ -49,7 +50,9 @@ export function defineConfig(options, ...userConfigs) {
 	}
 
 	if (enableUnicorn) {
-		configs.push(unicorn())
+		configs.push(unicorn({
+			strict,
+		}))
 	}
 
 	if (enableTypescript) {

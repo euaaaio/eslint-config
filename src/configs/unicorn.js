@@ -2,7 +2,9 @@ import pluginUnicorn from 'eslint-plugin-unicorn'
 import { defineConfig } from 'eslint/config'
 import { GLOB_ASTRO, GLOB_STORYBOOK, GLOB_TESTS, GLOB_VUE } from '../globs.js'
 
-export function unicorn() {
+export function unicorn(options = {}) {
+	const { strict } = options
+
 	return defineConfig([
 		{
 			name: 'euaaaio/unicorn',
@@ -48,6 +50,12 @@ export function unicorn() {
 				'unicorn/custom-error-definition': 'error',
 				'unicorn/prefer-import-meta-properties': 'error',
 				'unicorn/prefer-json-parse-buffer': 'error',
+
+				...strict
+					? {}
+					: {
+							'unicorn/no-array-for-each': 'off',
+						},
 			},
 		},
 

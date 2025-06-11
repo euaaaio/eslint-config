@@ -6,6 +6,13 @@ interface DefineConfigOptions {
 	ignores?: string[]
 
 	/**
+	 * @default true
+	 *
+	 * When disabled, the config will be less strict and opinionated.
+	 */
+	strict?: boolean
+
+	/**
 	 * @link https://typescript-eslint.io/
 	 * @default false
 	 */
