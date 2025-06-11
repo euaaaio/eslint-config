@@ -55,7 +55,10 @@ export function vue(options = {}) {
 				}],
 				'vue/no-import-compiler-macros': 'error',
 				'vue/no-undef-components': ['error', {
-					ignorePatterns: ['RouterLink'],
+					ignorePatterns: [
+						'RouterView',
+						'RouterLink',
+					],
 				}],
 				'vue/no-unused-emit-declarations': 'error',
 				'vue/no-unused-refs': 'error',
