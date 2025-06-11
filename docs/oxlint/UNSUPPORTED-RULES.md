@@ -91,7 +91,6 @@
 - `@typescript-eslint/no-array-delete`
 - `@typescript-eslint/no-base-to-string`
 - `@typescript-eslint/no-confusing-void-expression`
-- `@typescript-eslint/no-deprecated`
 - `@typescript-eslint/no-duplicate-type-constituents`
 - `@typescript-eslint/no-floating-promises`
 - `@typescript-eslint/no-for-in-array`

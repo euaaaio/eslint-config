@@ -42,6 +42,7 @@ export function typescript(options = {}) {
 				'@typescript-eslint/consistent-type-definitions': 'off',
 				'@typescript-eslint/restrict-template-expressions': 'off',
 				'@typescript-eslint/prefer-nullish-coalescing': 'off',
+				'@typescript-eslint/no-deprecated': 'off',
 				'@typescript-eslint/no-empty-function': 'off',
 
 				// Disable not stable
