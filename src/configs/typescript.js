@@ -2,7 +2,7 @@ import pluginTypescript from '@typescript-eslint/eslint-plugin'
 import parserTypescript from '@typescript-eslint/parser'
 import { defineConfig } from 'eslint/config'
 import process from 'node:process'
-import { GLOB_TS } from '../globs.js'
+import { GLOB_TESTS, GLOB_TS } from '../globs.js'
 import { javascript } from './javascript.js'
 
 export function typescript(options = {}) {
@@ -59,6 +59,13 @@ export function typescript(options = {}) {
 				'@typescript-eslint/no-misused-promises': ['error', {
 					checksVoidReturn: false,
 				}],
+			},
+		},
+		{
+			name: 'euaaaio/typescript/testing',
+			files: GLOB_TESTS,
+			rules: {
+				'@typescript-eslint/no-explicit-any': 'off',
 			},
 		},
 	])

@@ -418,6 +418,19 @@
     },
     {
       "files": [
+        "**/__tests__/**/*.{js,ts}",
+        "**/*.spec.{js,ts}",
+        "**/*.test.{js,ts}"
+      ],
+      "rules": {
+        "@typescript-eslint/no-explicit-any": "off"
+      },
+      "plugins": [
+        "typescript"
+      ]
+    },
+    {
+      "files": [
         "**/*.vue"
       ],
       "rules": {
