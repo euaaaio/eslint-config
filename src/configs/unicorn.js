@@ -55,6 +55,7 @@ export function unicorn(options = {}) {
 					? {}
 					: {
 							'unicorn/no-array-for-each': 'off',
+							'unicorn/no-useless-undefined': 'off',
 						},
 			},
 		},
