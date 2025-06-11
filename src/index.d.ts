@@ -76,6 +76,13 @@ interface DefineConfigOptions {
 		 */
 		dts?: boolean
 	}
+
+	/**
+	 * @default false
+	 *
+	 * FANS Dev Mode
+	 */
+	fans?: boolean
 }
 
 export function defineConfig(
