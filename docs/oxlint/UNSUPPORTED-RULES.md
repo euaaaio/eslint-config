@@ -11,7 +11,6 @@
 - `id-match`
 - `logical-assignment-operators`
 - `no-dupe-args`
-- `no-extra-bind`
 - `no-implicit-globals`
 - `no-implied-eval`
 - `no-invalid-this`
@@ -78,6 +77,7 @@
 - `unicorn/prevent-abbreviations`
 - `unicorn/relative-url-style`
 - `unicorn/template-indent`
+- `no-undef` *(in development)*
 - `@typescript-eslint/class-literal-property-style`
 - `@typescript-eslint/consistent-type-assertions`
 - `@typescript-eslint/dot-notation`

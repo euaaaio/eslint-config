@@ -34,6 +34,7 @@ export function typescript(options = {}) {
 				// Disabled JavaScript rules
 				'init-declarations': 'off',
 				'no-redeclare': 'off',
+				'no-undef': 'off',
 
 				...pluginTypescript.configs['stylistic-type-checked'].rules,
 				...pluginTypescript.configs['strict-type-checked'].rules,
