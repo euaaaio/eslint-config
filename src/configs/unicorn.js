@@ -33,6 +33,7 @@ export function unicorn(options = {}) {
 						el: false,
 						env: false,
 						ext: false,
+						param: false,
 						params: false,
 						props: false,
 						ref: false,
