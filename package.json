@@ -1,6 +1,6 @@
 {
   "name": "@euaaaio/eslint-config",
-  "version": "8.3.0",
+  "version": "9.0.0",
   "description": "Opinionated and flexible ESLint shareable config for @euaaaio",
   "author": "Eduard Aksamitov <e@euaaaio.ru>",
   "license": "MIT",
