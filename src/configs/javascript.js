@@ -1,6 +1,6 @@
 import pluginJs from '@eslint/js'
-import { defineConfig } from 'eslint/config'
 import globals from 'globals'
+import { defineConfig } from '../utils/index.js'
 
 export function javascript() {
 	return defineConfig([

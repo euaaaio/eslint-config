@@ -1,6 +1,6 @@
 import pluginPrettier from 'eslint-plugin-prettier'
 import pluginPrettierRecommended from 'eslint-plugin-prettier/recommended'
-import { defineConfig } from 'eslint/config'
+import { defineConfig } from '../utils/index.js'
 
 export function prettier() {
 	return defineConfig([{

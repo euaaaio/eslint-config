@@ -1,5 +1,5 @@
 import pluginDeMorgan from 'eslint-plugin-de-morgan'
-import { defineConfig } from 'eslint/config'
+import { defineConfig } from '../utils/index.js'
 
 export function deMorgan() {
 	return defineConfig([

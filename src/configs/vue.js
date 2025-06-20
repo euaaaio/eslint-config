@@ -1,9 +1,9 @@
 import parserTypescript from '@typescript-eslint/parser'
 import pluginVue from 'eslint-plugin-vue'
 import pluginVueA11y from 'eslint-plugin-vuejs-accessibility'
-import { defineConfig } from 'eslint/config'
 import parserVue from 'vue-eslint-parser'
 import { GLOB_VUE } from '../globs.js'
+import { defineConfig } from '../utils/index.js'
 
 export function vue(options = {}) {
 	const languageOptionsWithTS = {

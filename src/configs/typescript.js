@@ -1,8 +1,8 @@
 import pluginTypescript from '@typescript-eslint/eslint-plugin'
 import parserTypescript from '@typescript-eslint/parser'
-import { defineConfig } from 'eslint/config'
 import process from 'node:process'
 import { GLOB_TESTS, GLOB_TS } from '../globs.js'
+import { defineConfig } from '../utils/index.js'
 import { javascript } from './javascript.js'
 
 export function typescript(options = {}) {

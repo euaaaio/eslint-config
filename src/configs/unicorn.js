@@ -1,6 +1,6 @@
 import pluginUnicorn from 'eslint-plugin-unicorn'
-import { defineConfig } from 'eslint/config'
 import { GLOB_ASTRO, GLOB_STORYBOOK, GLOB_TESTS, GLOB_VUE } from '../globs.js'
+import { defineConfig } from '../utils/index.js'
 
 export function unicorn(options = {}) {
 	const { strict } = options

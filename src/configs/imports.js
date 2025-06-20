@@ -1,5 +1,5 @@
 import pluginImportX from 'eslint-plugin-import-x'
-import { defineConfig } from 'eslint/config'
+import { defineConfig } from '../utils/index.js'
 
 export function imports() {
 	return defineConfig([{

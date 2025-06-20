@@ -1,6 +1,6 @@
 import pluginOxlint from 'eslint-plugin-oxlint'
-import { defineConfig } from 'eslint/config'
 import { GLOB_DTS } from '../globs.js'
+import { defineConfig } from '../utils/index.js'
 import { typescript } from './typescript.js'
 
 export function oxlint(options = {}) {

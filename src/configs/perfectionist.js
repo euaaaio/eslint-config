@@ -1,5 +1,5 @@
 import pluginPerfectionist from 'eslint-plugin-perfectionist'
-import { defineConfig } from 'eslint/config'
+import { defineConfig } from '../utils/index.js'
 
 export function perfectionist() {
 	return defineConfig([

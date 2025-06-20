@@ -1,6 +1,6 @@
 import gitignore from 'eslint-config-flat-gitignore'
-import { defineConfig } from 'eslint/config'
 import { GLOB_EXCLUDE } from '../globs.js'
+import { defineConfig } from '../utils/index.js'
 
 export function ignores(files = []) {
 	return defineConfig([

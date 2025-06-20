@@ -1,5 +1,5 @@
 import pluginNode from 'eslint-plugin-n'
-import { defineConfig } from 'eslint/config'
+import { defineConfig } from '../utils/index.js'
 
 export function node() {
 	return defineConfig([

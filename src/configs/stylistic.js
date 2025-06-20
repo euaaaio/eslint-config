@@ -1,5 +1,5 @@
 import pluginStylistic from '@stylistic/eslint-plugin'
-import { defineConfig } from 'eslint/config'
+import { defineConfig } from '../utils/index.js'
 
 export function stylistic(options) {
 	const { overrides, ...customizeOptions } = options
