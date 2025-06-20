@@ -80,7 +80,6 @@
 - `no-undef` *(in development)*
 - `@typescript-eslint/class-literal-property-style`
 - `@typescript-eslint/consistent-type-assertions`
-- `@typescript-eslint/no-misused-promises`
 - `@typescript-eslint/dot-notation`
 - `@typescript-eslint/non-nullable-type-assertion-style`
 - `@typescript-eslint/prefer-find`
@@ -88,6 +87,7 @@
 - `@typescript-eslint/prefer-optional-chain`
 - `@typescript-eslint/prefer-regexp-exec`
 - `@typescript-eslint/prefer-string-starts-ends-with`
+- `@typescript-eslint/no-misused-promises`
 - `@stylistic/array-bracket-spacing`
 - `@stylistic/arrow-parens`
 - `@stylistic/arrow-spacing`

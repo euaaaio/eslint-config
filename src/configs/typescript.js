@@ -39,17 +39,12 @@ export function typescript(options = {}) {
 				...pluginTypescript.configs.recommended.rules,
 				...pluginTypescript.configs.stylistic.rules,
 
-				'@typescript-eslint/no-misused-promises': ['error', {
-					checksVoidReturn: false,
-				}],
-
 				...strict
 					? {
 							...pluginTypescript.configs['stylistic-type-checked'].rules,
 
 							// Disabled
 							'@typescript-eslint/consistent-type-definitions': 'off',
-							'@typescript-eslint/no-empty-function': 'off',
 							'@typescript-eslint/prefer-nullish-coalescing': 'off',
 
 							// Improvements
@@ -58,6 +53,14 @@ export function typescript(options = {}) {
 							}],
 						}
 					: {},
+
+				// Disabled
+				'@typescript-eslint/no-empty-function': 'off',
+
+				// Improvements
+				'@typescript-eslint/no-misused-promises': ['error', {
+					checksVoidReturn: false,
+				}],
 			},
 		},
 		{
