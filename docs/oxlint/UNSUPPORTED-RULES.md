@@ -9,7 +9,6 @@
 - `getter-return` *(in development)*
 - `id-denylist`
 - `id-match`
-- `logical-assignment-operators`
 - `no-dupe-args`
 - `no-implicit-globals`
 - `no-implied-eval`

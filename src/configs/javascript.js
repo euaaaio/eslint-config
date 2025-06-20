@@ -51,7 +51,6 @@ export function javascript() {
 				'id-denylist': 'error',
 				'id-match': 'error',
 				'init-declarations': 'error',
-				'logical-assignment-operators': 'error',
 				'max-classes-per-file': 'error',
 				'max-depth': 'error',
 				'max-nested-callbacks': 'error',
