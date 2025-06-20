@@ -61,6 +61,7 @@ export function defineConfig(options, ...userConfigs) {
 		configs.push(
 			typescript({
 				extraFileExtensions,
+				strict,
 			}),
 		)
 	}
