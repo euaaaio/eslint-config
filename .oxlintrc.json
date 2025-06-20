@@ -165,7 +165,6 @@
     "prefer-promise-reject-errors": "error",
     "prefer-rest-params": "error",
     "prefer-spread": "error",
-    "require-await": "error",
     "require-yield": "error",
     "sort-vars": "error",
     "symbol-description": "error",
