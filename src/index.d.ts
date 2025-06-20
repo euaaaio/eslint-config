@@ -89,3 +89,5 @@ export function defineConfig(
 	options: DefineConfigOptions,
 	...configs: Config[] | Linter.Config[]
 ): Config[] | Linter.Config[]
+
+export * from './globs'

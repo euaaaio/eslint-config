@@ -129,3 +129,5 @@ export function defineConfig(options, ...userConfigs) {
 
 	return configs.flat()
 }
+
+export * from './globs.js'
