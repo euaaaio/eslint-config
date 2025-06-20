@@ -61,6 +61,9 @@ export function typescript(options = {}) {
 				'@typescript-eslint/no-misused-promises': ['error', {
 					checksVoidReturn: false,
 				}],
+				'@typescript-eslint/no-unused-expressions': ['error', {
+					allowTernary: true,
+				}],
 			},
 		},
 		{
