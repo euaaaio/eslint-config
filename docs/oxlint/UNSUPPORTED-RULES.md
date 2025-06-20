@@ -49,7 +49,6 @@
 - `n/no-unpublished-require`
 - `n/no-unsupported-features/es-builtins`
 - `n/no-unsupported-features/es-syntax`
-- `n/no-unsupported-features/node-builtins`
 - `n/prefer-global/buffer`
 - `n/prefer-node-protocol`
 - `n/process-exit-as-throw`

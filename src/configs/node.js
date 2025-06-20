@@ -25,7 +25,6 @@ export function node() {
 						ignores: ['modules', 'dynamicImport'],
 					},
 				],
-				'n/no-unsupported-features/node-builtins': 'error',
 				'n/prefer-global/buffer': ['error', 'never'],
 				'n/prefer-node-protocol': 'error',
 				'n/process-exit-as-throw': 'error',
