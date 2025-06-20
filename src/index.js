@@ -1,7 +1,6 @@
 import {
 	astro,
 	deMorgan,
-	fans,
 	ignores,
 	imports,
 	javascript,
@@ -28,7 +27,6 @@ export function defineConfig(options, ...userConfigs) {
 		unicorn: enableUnicorn = true,
 		perfectionist: enablePerfectionist = false,
 		oxlint: enableOxlint = false,
-		fans: enableFans = false,
 		strict = true,
 	} = options
 
@@ -105,10 +103,6 @@ export function defineConfig(options, ...userConfigs) {
 
 	if (enableTest) {
 		configs.push(test())
-	}
-
-	if (enableFans) {
-		configs.push(fans())
 	}
 
 	configs.push(...userConfigs)
