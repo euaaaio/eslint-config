@@ -167,7 +167,6 @@ export function javascript() {
 				'no-useless-rename': 'error',
 				'no-useless-return': 'error',
 				'no-var': 'error',
-				'no-warning-comments': 'error',
 				'no-with': 'error',
 				'object-shorthand': 'error',
 				'operator-assignment': 'error',

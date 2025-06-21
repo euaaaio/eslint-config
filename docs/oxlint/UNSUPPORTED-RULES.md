@@ -29,7 +29,6 @@
 - `no-unreachable` *(in development)*
 - `no-unreachable-loop`
 - `no-useless-return`
-- `no-warning-comments`
 - `object-shorthand`
 - `prefer-arrow-callback`
 - `prefer-const`
