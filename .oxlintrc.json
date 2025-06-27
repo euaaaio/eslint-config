@@ -441,6 +441,19 @@
         "Astro": "readonly",
         "Fragment": "readonly"
       }
+    },
+    {
+      "files": [
+        "**/pages/**/*.astro"
+      ],
+      "rules": {
+        "unicorn/filename-case": [
+          "error",
+          {
+            "case": "camelCase"
+          }
+        ]
+      }
     }
   ]
 }

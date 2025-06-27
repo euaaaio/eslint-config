@@ -4,6 +4,7 @@ export const GLOB_TS = '**/*.ts'
 export const GLOB_DTS = '**/*.d.ts'
 export const GLOB_VUE = '**/*.vue'
 export const GLOB_ASTRO = '**/*.astro'
+export const GLOB_ASTRO_PAGES = '**/pages/**/*.astro'
 
 export const GLOB_STORYBOOK = '**/*.stories.{js,ts}'
 
