@@ -2,6 +2,7 @@ tsconfig.json
 dist/
 scripts/
 docs/
+.vercel/
 
 vercel.json
 eslint-oxlint.config.js
