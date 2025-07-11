@@ -331,6 +331,19 @@
     },
     {
       "files": [
+        "**/pages/**/*.astro"
+      ],
+      "rules": {
+        "unicorn/filename-case": [
+          "error",
+          {
+            "case": "camelCase"
+          }
+        ]
+      }
+    },
+    {
+      "files": [
         "**/*.stories.{js,ts}"
       ],
       "rules": {
@@ -349,12 +362,7 @@
         "**/*.test.{js,ts}"
       ],
       "rules": {
-        "unicorn/filename-case": [
-          "error",
-          {
-            "case": "pascalCase"
-          }
-        ]
+        "unicorn/filename-case": "off"
       }
     },
     {
@@ -441,19 +449,6 @@
       "globals": {
         "Astro": "readonly",
         "Fragment": "readonly"
-      }
-    },
-    {
-      "files": [
-        "**/pages/**/*.astro"
-      ],
-      "rules": {
-        "unicorn/filename-case": [
-          "error",
-          {
-            "case": "camelCase"
-          }
-        ]
       }
     }
   ]
