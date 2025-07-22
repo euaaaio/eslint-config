@@ -56,11 +56,14 @@
 - `unicorn/custom-error-definition`
 - `unicorn/expiring-todo-comments`
 - `unicorn/import-style`
+- `unicorn/no-array-reverse`
 - `unicorn/no-for-loop`
 - `unicorn/no-named-default`
 - `unicorn/no-unnecessary-array-splice-count`
 - `unicorn/no-unnecessary-polyfills`
+- `unicorn/no-useless-error-capture-stack-trace`
 - `unicorn/prefer-at`
+- `unicorn/prefer-class-fields`
 - `unicorn/prefer-default-parameters`
 - `unicorn/prefer-export-from`
 - `unicorn/prefer-import-meta-properties`
@@ -73,6 +76,7 @@
 - `unicorn/prefer-top-level-await`
 - `unicorn/prevent-abbreviations`
 - `unicorn/relative-url-style`
+- `unicorn/require-module-specifiers`
 - `unicorn/template-indent`
 - `no-undef` *(in development)*
 - `@typescript-eslint/class-literal-property-style`
